@@ -46,10 +46,10 @@ class Results : AppCompatActivity() {
 
         // result receive
         val painResult:painData
-        if (intent.extras != null){
-            painResult = intent?.getSerializableExtra(RE) as painData
+        painResult = if (intent.extras != null){
+            intent?.getSerializableExtra(RE) as painData
         }else{
-            painResult = painLevel().loadPainLevel()
+            painLevel().loadPainLevel()
         }
 
         setPainResult(painResult)
