@@ -40,7 +40,7 @@ class Scanning : AppCompatActivity() {
             photoFile = getPhotoFile(FILE_NAME)
 
             // specifies where the photo taken lives
-            val fileProvider = FileProvider.getUriForFile(this, "com.example.fileprovider", photoFile)
+            val fileProvider = FileProvider.getUriForFile(this, "com.example.PainRate.fileprovider", photoFile)
             takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, fileProvider)
 
             // checks if there's any camera application on the device
