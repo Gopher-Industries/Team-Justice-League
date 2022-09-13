@@ -1,10 +1,8 @@
 package com.example.PainRate.accessingnet
 
 import android.graphics.Bitmap
-import java.io.ByteArrayOutputStream
-import java.io.DataOutput
-import java.io.DataOutputStream
-import java.io.IOException
+import com.example.PainRate.utils.JsonMapper
+import java.io.*
 import java.net.HttpURLConnection
 import java.net.MalformedURLException
 import java.net.URL
@@ -60,6 +58,20 @@ class PostClass(val img: Bitmap) {
             os.close()
 
             // Receiving part
+            val charset = "utf-8"
+            val inStream = BufferedReader(InputStreamReader(conn.inputStream, charset))
+            val buffer = StringBuffer()
+            inStream.use { br ->
+                val temp = br.readLine()
+                if (temp != null) {
+                    buffer.append(temp)
+                }
+            }
+            inStream.close()
+
+            // Decode json
+            val analysisResult = JsonMapper.mapToAnalysisResult(buffer.toString())
+            println("analysisResult:id=${analysisResult.id},Pain=${analysisResult.pain}, PainRate=${analysisResult.painRate}")
 
         } catch (e: MalformedURLException) {
             e.printStackTrace()
