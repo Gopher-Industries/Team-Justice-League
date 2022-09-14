@@ -2,6 +2,7 @@ package com.example.PainRate
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.Environment
@@ -11,8 +12,9 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
-import com.example.PainRate.painlevel.painData
-import com.example.PainRate.painlevel.painLevel
+import androidx.core.graphics.drawable.toBitmap
+import com.example.PainRate.accessingnet.PostClass
+import com.example.PainRate.model.AnalysisResult
 import java.io.File
 
 private const val REQUEST_CODE = 1
@@ -54,14 +56,18 @@ class Scanning : AppCompatActivity() {
             }
         }
 
-        // Random Generate Patient result value -- Only for offline testing
-        var painResult: painData = painLevel().loadPainLevel()
-
         // on-click listener for button which will go to the results page
         val btnStartAnalysis = findViewById<Button>(R.id.btnStartAnalysis)
         btnStartAnalysis.setOnClickListener {
             val intent = Intent(Scanning@this, Results::class.java)
-            intent.putExtra(Results.RE, painResult)
+
+            // Get image from ImageView and convert into bitmap
+            val bitmap: Bitmap = (findViewById<ImageView>(R.id.imgvwPhoto).drawable).toBitmap()
+
+            // Get result from assessment server
+            val solut:AnalysisResult = PostClass(bitmap).setConnection()
+
+            intent.putExtra(Results.RE, solut)
             startActivity(intent)
         }
     }

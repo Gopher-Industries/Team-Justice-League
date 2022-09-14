@@ -16,10 +16,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btnResults = findViewById<Button>(R.id.btnToResultsPage)
-        btnResults.setOnClickListener {
-            val intent = Intent(this, Results::class.java)
-            startActivity(intent)
-        }
+//        val btnResults = findViewById<Button>(R.id.btnToResultsPage)
+//        btnResults.setOnClickListener {
+//            val intent = Intent(this, Results::class.java)
+//            startActivity(intent)
+//        }
     }
 }

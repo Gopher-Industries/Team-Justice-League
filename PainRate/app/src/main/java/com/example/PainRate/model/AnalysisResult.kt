@@ -9,4 +9,4 @@ data class AnalysisResult(
     val pain: Boolean,
     @SerialName("PainRate")
     val painRate: Int
-)
+) : java.io.Serializable

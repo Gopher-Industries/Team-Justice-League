@@ -14,23 +14,25 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintSet
 import com.example.PainRate.PatientInfo.Patient
-import com.example.PainRate.painlevel.painData
-import com.example.PainRate.painlevel.painLevel
 import com.example.PainRate.databinding.ActivityResultsBinding
+import com.example.PainRate.model.AnalysisResult
 import java.util.*
 
 
 class Results : AppCompatActivity() {
+    // late initialize variables
     private lateinit var binding: ActivityResultsBinding
     private var set = ConstraintSet()
     private var reset = ConstraintSet()
 
+    // Global constant string
     companion object{
         const val RE = "Result"
     }
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Setting up activity with binding
         super.onCreate(savedInstanceState)
         binding = ActivityResultsBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -39,22 +41,17 @@ class Results : AppCompatActivity() {
         set.clone(binding.root)
         reset.clone(binding.root)
 
-        // Set patient name
+        // Generate Patient info and added to UI
         val patient = Patient("Kate", "Female", "21 March 1944")
-
         setPatientInfo(patient)
 
-        // result receive
-        val painResult:painData
-        painResult = if (intent.extras != null){
-            intent?.getSerializableExtra(RE) as painData
-        }else{
-            painLevel().loadPainLevel()
-        }
+        // Receive result from Scanning activity
+        val painResult: AnalysisResult = intent?.getSerializableExtra(RE) as AnalysisResult
 
+        // Setting up message fo
         setPainResult(painResult)
-        if (painResult.RPL > 0){
-            setArrowPlace(painResult.RPL.toString())
+        if (painResult.painRate > 0){
+            setArrowPlace(painResult.painRate.toString())
         } else {
             setNonePage()
         }
@@ -73,11 +70,15 @@ class Results : AppCompatActivity() {
         }
     }
 
+    // Function for setting patient info in UI
     @SuppressLint("SimpleDateFormat")
     @RequiresApi(Build.VERSION_CODES.N)
     private fun setPatientInfo(patient: Patient) {
+        // Basic info
         binding.PatientName.text = patient.name
         binding.PatientDetails.text = String.format(patient.DOB + '\n' + patient.gender)
+
+        // Current date as asssessment date
         val date = SimpleDateFormat("EEE, MMM d, yyyy").format(Date())
         val input = "Assessment Date: $date"
         val spannable = SpannableString(input)
@@ -85,18 +86,25 @@ class Results : AppCompatActivity() {
         binding.AsasDt.text = spannable
     }
 
-    private fun setPainResult(painResult: painData) {
+    // Setting message for UI
+    private fun setPainResult(painResult: AnalysisResult) {
         val paintxt1: String
         val paintxt2: String
 
-        when (painResult.RPL) {
+        // Based on different painRate, output different comment on pain number
+        when (painResult.painRate) {
             -1 -> {
-                paintxt1 = "No"
-                paintxt2 = "No pain detected"
-            }
-            0 -> {
-                paintxt1 = "No"
-                paintxt2 = "No pain detected"
+                // Based on different pain detection result set different message
+                when (painResult.pain) {
+                    true -> {
+                        paintxt1 = "Yes"
+                        paintxt2 = "Pain detected"
+                    }
+                    false -> {
+                        paintxt1 = "No"
+                        paintxt2 = "No pain detected"
+                    }
+                }
             }
             in 1..5 -> {
                 paintxt1 = "Light"
@@ -113,11 +121,12 @@ class Results : AppCompatActivity() {
         }
 
         // Convert to string and assign different color to them
-        val lvl = painResult.RPL.toString()
+        val lvl = painResult.painRate.toString()
         val str = "Pain level: ${lvl}, $paintxt1"
         fillintxt(str, paintxt1, paintxt2, lvl)
     }
 
+    // Function for set color for different part in text
     private fun fillintxt(str: String, t1: String, t2: String, lvl: String) {
         val spannable = SpannableString(str)
 
@@ -168,8 +177,13 @@ class Results : AppCompatActivity() {
             spanstr.setSpan(bl, 0, str1.length, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
             binding.PainTxtN.text = spanstr
             binding.PainDescripN.text = t2
-        }
-        else {
+        } else if (t1 == "Yes") {
+            val str1 = "Pain detection: Yes"
+            val spanstr = SpannableString(str1)
+            spanstr.setSpan(bl, 0, str1.length, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+            binding.PainTxtN.text = spanstr
+            binding.PainDescripN.text = t2
+        } else {
             binding.PainTxt.text = spannable
             binding.PainDescrip.text = t2
         }

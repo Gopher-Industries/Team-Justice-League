@@ -1,6 +1,7 @@
 package com.example.PainRate.accessingnet
 
 import android.graphics.Bitmap
+import com.example.PainRate.model.AnalysisResult
 import com.example.PainRate.utils.JsonMapper
 import java.io.*
 import java.net.HttpURLConnection
@@ -9,20 +10,23 @@ import java.net.URL
 
 class PostClass(val img: Bitmap) {
     // Constant values
-    val attachmentName = "photo"
-    val attachmentFileName = "photo.bmp"
-    val boundary = "*****"
-    val crlf = "\r\n"
-    val twoHyphens = "--"
+    private val attachmentName = "photo"
+    private val attachmentFileName = "photo.bmp"
+    private val boundary = "*****"
+    private val crlf = "\r\n"
+    private val twoHyphens = "--"
+
+    // TODO: Everytime restart server, please modify the URL link
+    private val serIP = "0.0.0.0"
 
     // Initialize variable
     private lateinit var conn: HttpURLConnection
     private lateinit var os: DataOutputStream
+    private lateinit var buffer: StringBuffer
 
-    private fun Connection() {
+    fun setConnection(): AnalysisResult {
         // Set server URL
-        // TODO: Everytime restart server, please modify the URL link
-        val url = URL("https://")
+        val url = URL("https://${this.serIP}")
 
         // Set bitmap image to byte array
         val stream = ByteArrayOutputStream()
@@ -60,7 +64,7 @@ class PostClass(val img: Bitmap) {
             // Receiving part
             val charset = "utf-8"
             val inStream = BufferedReader(InputStreamReader(conn.inputStream, charset))
-            val buffer = StringBuffer()
+            buffer = StringBuffer()
             inStream.use { br ->
                 val temp = br.readLine()
                 if (temp != null) {
@@ -70,9 +74,9 @@ class PostClass(val img: Bitmap) {
             inStream.close()
 
             // Decode json
-            val analysisResult = JsonMapper.mapToAnalysisResult(buffer.toString())
-            println("analysisResult:id=${analysisResult.id},Pain=${analysisResult.pain}, PainRate=${analysisResult.painRate}")
-
+            // Testing for print result read from json file
+            // val analysisResult = JsonMapper.mapToAnalysisResult(buffer.toString())
+            // println("analysisResult:id=${analysisResult.id},Pain=${analysisResult.pain}, PainRate=${analysisResult.painRate}")
         } catch (e: MalformedURLException) {
             e.printStackTrace()
         } catch (e: IOException) {
@@ -82,5 +86,7 @@ class PostClass(val img: Bitmap) {
                 conn.disconnect()
             }
         }
+        // Return Json file as dataset for static page
+        return JsonMapper.mapToAnalysisResult(buffer.toString())
     }
 }
