@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/Draft 1/ScanningPage/app/src/main/res/layout/activity_main.xml" value="0.37447916666666664" />
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/Draft 1/ScanningPage/app/src/main/res/layout/activity_results.xml" value="0.37447916666666664" />
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/Draft 1/ScanningPage/app/src/main/res/layout/activity_scanning.xml" value="0.37447916666666664" />
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/Draft 2/ScanningPage/app/src/main/res/layout/activity_results.xml" value="0.37447916666666664" />
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/PainRate/app/src/main/res/layout/activity_main.xml" value="0.37447916666666664" />
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/PainRate/app/src/main/res/layout/activity_results.xml" value="0.37447916666666664" />
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/PainRate/app/src/main/res/layout/activity_scanning.xml" value="0.19322916666666667" />
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/TLJ/Team-Justice-League/PainRate/app/src/main/res/layout/activity_main.xml" value="0.37447916666666664" />
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/TLJ/Team-Justice-League/PainRate/app/src/main/res/layout/activity_results.xml" value="0.37447916666666664" />
+        <entry key="..\:/Grade 4/Grade 4 T2 SIT378/Project/TLJ/Team-Justice-League/PainRate/app/src/main/res/layout/activity_scanning.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/mello/OneDrive - Deakin University/SIT374/Sprint 3/ScanningPage/app/src/main/res/layout/activity_main.xml" value="0.26545086119554206" />
+        <entry key="..\:/Users/mello/OneDrive - Deakin University/SIT374/Sprint 3/ScanningPage/app/src/main/res/layout/activity_results.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/mello/OneDrive - Deakin University/SIT374/Sprint 3/ScanningPage/app/src/main/res/layout/activity_scanning.xml" value="0.26545086119554206" />
+        <entry key="..\:/Users/mello/OneDrive - Deakin University/SIT374/Sprint 3/ScanningPage/app/src/main/res/xml/fileprovider.xml" value="0.35054347826086957" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
