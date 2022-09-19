@@ -2,6 +2,7 @@ package com.example.PainRate
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.Environment
@@ -12,6 +13,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
+import androidx.core.graphics.drawable.toBitmap
 import com.example.PainRate.accessingnet.PostClass
 import com.example.PainRate.model.AnalysisResult
 import java.io.File
@@ -64,13 +66,26 @@ class Scanning : AppCompatActivity() {
             val intent = Intent(Scanning@this, Results::class.java)
 
             // Get result from assessment server
-            val solut:AnalysisResult = PostClass(photoFile).setConnection()
+            val conn = PostClass()
+
+//            val path = "/sdcard/Android/data/com.example.PainRate/files/Pictures/genshin.png"
+//            val file = File(path)
+//            if(!file.exists()) {
+//                println("File not found!")
+//            } else {
+//                val btm = BitmapFactory.decodeFile(path)
+//                val bta = conn.btimaptoBytes(btm)
+//                conn.clientOkHttp(bta)
+//            }
+
+            val bta = conn.btimaptoBytes(findViewById<ImageView>(R.id.imgvwPhoto).drawable.toBitmap())
+            conn.clientOkHttp(photoFile)
 
             // testing
 //             val test = TEsting()
 //             test.conTest()
 
-            intent.putExtra(Results.RE, solut)
+            intent.putExtra(Results.RE, "")
             startActivity(intent)
         }
     }

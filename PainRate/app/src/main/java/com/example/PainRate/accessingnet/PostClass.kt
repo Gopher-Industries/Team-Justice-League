@@ -1,134 +1,73 @@
 package com.example.PainRate.accessingnet
 
+import android.graphics.Bitmap
 import android.icu.util.Output
 import com.example.PainRate.model.AnalysisResult
 import com.example.PainRate.utils.JsonMapper
+import okhttp3.*
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import org.json.JSONObject
 import java.io.*
+import java.lang.Exception
 import java.net.HttpURLConnection
 import java.net.MalformedURLException
 import java.net.URL
 
-class PostClass(val img: File) {
+class PostClass() {
     // Constant values
     private val attachmentName = "image"
     private val boundary = "*****"
     private val preFix = "\r\n--"+ this.boundary+"--\r\n"
 
     // TODO: Everytime restart server, please modify the URL link
-    private val setIP = "35.238.64.169"
+    private val setIP = "34.67.21.9"
 
     // Initialize variable
     private lateinit var conn: HttpURLConnection
     private lateinit var os: DataOutputStream
 
-    // private var buffer = StringBuffer()
-
-
-//    fun ConnTest() {
-//        // Set server URL
-//        val url = URL("http://${this.setIP}:5000/test")
-//
-//        conn = url.openConnection() as HttpURLConnection
-//        conn.useCaches = false
-//        conn.doOutput = true
-//        conn.requestMethod = "POST"
-//
-//        val responseCode = conn.responseCode
-//        println(responseCode)
-//    }
-
-    fun setConnection(): AnalysisResult {
-        // Set server URL
+    fun clientOkHttp(FILE_IMAGE: File){
         val url = URL("http://${this.setIP}:5000/getPainRate")
-//        val url = URL("http://${this.setIP}:5000/sendBaseImage")
-//        val url = URL("http://${this.setIP}:5000/test")
-        val buffer = StringBuffer()
-        val painResult = AnalysisResult(true, 16.0, "PainTest")
-        // Set connection part
-        try {
-            // Set connection attribute
-            conn = url.openConnection() as HttpURLConnection
-            conn.doOutput = true
-            conn.doInput = true
-            conn.useCaches = false
-            conn.connectTimeout = 5000
-            conn.readTimeout = 30000
+        println(FILE_IMAGE.toString())
+        //val url ="http://${this.setIP}:5000/"
+        println(url)
+        println("Setting body")
+        val client = OkHttpClient()
+        //val body = ProgressRequestBody("text/x-markdown; charset=utf-8".toMediaTypeOrNull(), "Hello")
+        val requestBody = MultipartBody.Builder()
+            .setType(MultipartBody.FORM)
+            .addFormDataPart("identity","testing_v1")
+            .addFormDataPart("image", "photo.jpg", ProgressRequestBody("image/*".toMediaTypeOrNull(), FILE_IMAGE))
+            .build()
 
-            // Request type
-            conn.requestMethod = "POST"
+        println("body successful")
+        println("Setting up request")
+        val request = Request.Builder()
+            .url(url)
+            .post(requestBody)
+            .build()
 
-            // Request Header
-            // conn.setRequestProperty("Accept", "*/*")
-            conn.setRequestProperty("Connection", "Keep-Alive")
-            conn.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + this.boundary)
+        println("Set call")
+        val call = client.newCall(request)
 
-            // Set content in side payload
-            os = DataOutputStream(conn.outputStream)
-
-            // Use stringbuffer to store data to be send
-            val strbuf = StringBuffer()
-            strbuf.append(preFix)
-            strbuf.append("Content-Disposition: from-data; name=\"image\"; model_type: model1") // filename=\"" + this.attachmentName +"\"\r\n")
-            strbuf.append("Content-type: image/jpeg"+"\r\n\r\n")
-            os.write(strbuf.toString().toByteArray())
-
-
-            // Preparing uploading image
-            val fileInputStream = FileInputStream(img)
-            val imgStream = DataInputStream(fileInputStream)
-            val fileSize: Int = fileInputStream.available()
-            val bufferOut = ByteArray(fileSize)
-            imgStream.readFully(bufferOut)
-            os.write(bufferOut, 0, fileSize)
-
-            // Close image stream
-            imgStream.close()
-            fileInputStream.close()
-
-            os.write(preFix.toByteArray())
-
-            // Flush output buffer
-            os.flush()
-
-            // Print what inside outputstream
-            println("Solution from conn.outputstream")
-            val outStream = BufferedReader(InputStreamReader(os, charset) )
-            println(conn.outputStream.toString())
-            println("Solution from os")
-            println(os.toString())
-
-            os.close()
-
-            // Receiving part
-            val charset = "utf-8"
-            val inStream = BufferedReader(InputStreamReader(conn.inputStream, charset))
-            // println(conn.inputStream.toString())
-            inStream.use { br ->
-                val temp = br.readLine()
-                if (temp != null) {
-                    buffer.append(temp)
-                }
+        println("call started")
+        try{
+            val response = call.execute()
+            println("Trying to get response")
+            println(response.isSuccessful.toString())
+            if (response.isSuccessful){
+                val recbody = response.body
+                println(recbody!!.string())
             }
-            inStream.close()
-
-            println("Test Result: ")
-            println(buffer.toString())
-
-            // Decode json
-            // Testing for print result read from json file
-            // val analysisResult = JsonMapper.mapToAnalysisResult(buffer.toString())
-            // println("analysisResult:id=${analysisResult.id},Pain=${analysisResult.pain}, PainRate=${analysisResult.painRate}")
-        } catch (e: MalformedURLException) {
-            e.printStackTrace()
-        } catch (e: IOException) {
-            e.printStackTrace()
-        } finally {
-            conn.disconnect()
+            response.close()
+        } catch (e:Exception){
+            println(e)
         }
-        // Return Json file as dataset for static page
+    }
 
-        // return JsonMapper.mapToAnalysisResult(buffer.toString())
-        return painResult
+    fun btimaptoBytes(bitmap: Bitmap):ByteArray{
+        val baos = ByteArrayOutputStream()
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
+        return baos.toByteArray()
     }
 }
