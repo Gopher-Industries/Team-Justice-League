@@ -16,6 +16,7 @@ import androidx.core.content.FileProvider
 import androidx.core.graphics.drawable.toBitmap
 import com.example.PainRate.accessingnet.PostClass
 import com.example.PainRate.model.AnalysisResult
+import com.example.PainRate.utils.JsonMapper
 import java.io.File
 
 private const val REQUEST_CODE = 1
@@ -68,24 +69,30 @@ class Scanning : AppCompatActivity() {
             // Get result from assessment server
             val conn = PostClass()
 
-//            val path = "/sdcard/Android/data/com.example.PainRate/files/Pictures/genshin.png"
-//            val file = File(path)
-//            if(!file.exists()) {
-//                println("File not found!")
-//            } else {
-//                val btm = BitmapFactory.decodeFile(path)
-//                val bta = conn.btimaptoBytes(btm)
-//                conn.clientOkHttp(bta)
-//            }
+            // Sending image to
+            val bPath = "/sdcard/Android/data/com.example.PainRate/files/Pictures/example-reference-frame.png"
+            val bFile = File(bPath)
+            if(!bFile.exists()) {
+                println("File not found!")
+            } else {
+                conn.BaseOkHttp(bFile)
+            }
 
-            val bta = conn.btimaptoBytes(findViewById<ImageView>(R.id.imgvwPhoto).drawable.toBitmap())
-            conn.clientOkHttp(photoFile)
+            // Sending image to assessment module
+            val path = "/sdcard/Android/data/com.example.PainRate/files/Pictures/example-target-frame.png"
+            val file = File(path)
+            var analysisResult: AnalysisResult? = null
+            if(!file.exists()) {
+                println("File not found!")
+            } else {
+                val result= conn.clientOkHttp(file)
+                println("testing!!\n\n\n\n")
+                println(result)
+                analysisResult = JsonMapper.mapToAnalysisResult(result)
+            }
 
-            // testing
-//             val test = TEsting()
-//             test.conTest()
-
-            intent.putExtra(Results.RE, "")
+            // Include data into intent and call activity
+            intent.putExtra(Results.RE, analysisResult)
             startActivity(intent)
         }
     }

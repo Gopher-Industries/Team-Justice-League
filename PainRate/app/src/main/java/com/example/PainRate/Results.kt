@@ -16,6 +16,8 @@ import androidx.constraintlayout.widget.ConstraintSet
 import com.example.PainRate.PatientInfo.Patient
 import com.example.PainRate.databinding.ActivityResultsBinding
 import com.example.PainRate.model.AnalysisResult
+import java.math.BigDecimal
+import java.math.RoundingMode
 import java.util.*
 
 
@@ -46,8 +48,10 @@ class Results : AppCompatActivity() {
         setPatientInfo(patient)
 
         // Receive result from Scanning activity
-//        val painResult: AnalysisResult = intent?.getSerializableExtra(RE) as AnalysisResult
-         val painResult = AnalysisResult(true, 16.0, "PainTest")
+        val painResult: AnalysisResult = intent?.getSerializableExtra(RE) as AnalysisResult
+
+        // Set double to 2 decimals
+        painResult.painRate = BigDecimal(painResult.painRate).setScale(2, RoundingMode.HALF_EVEN).toDouble()
 
         // Setting up message fo
         setPainResult(painResult)
@@ -107,17 +111,17 @@ class Results : AppCompatActivity() {
                     }
                 }
             }
-            in 1.0..5.0 -> {
+            in 0.01..4.99 -> {
                 paintxt1 = "Light"
-                paintxt2 = "Pain level between 1 ~ 5 classified as light pain"
+                paintxt2 = "Pain level between 0.01 ~ 4.99 classified as light pain"
             }
-            in 6.0..10.0 -> {
+            in 5.0..9.99 -> {
                 paintxt1 = "Mild"
-                paintxt2 = "Pain level between 6 ~ 10 classified as mild pain"
+                paintxt2 = "Pain level between 5.0 ~ 9.99 classified as mild pain"
             }
             else -> {
                 paintxt1 = "Strong"
-                paintxt2 = "Pain level between 11 ~ 16 classified as Strong pain"
+                paintxt2 = "Pain level between 10.0 ~ 16 classified as Strong pain"
             }
         }
 
