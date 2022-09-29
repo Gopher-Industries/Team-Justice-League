@@ -15,7 +15,7 @@ import java.net.URL
 
 class PostClass() {
     // TODO: Everytime restart server, please modify the URL link
-    private val setIP = "34.135.121.218"
+    private val setIP = "34.171.182.218"
 
     // Send target image to assessment module
     fun clientOkHttp(FILE_IMAGE: File): String {
@@ -25,7 +25,7 @@ class PostClass() {
         // Set data to sent through connection
         val requestBody = MultipartBody.Builder()
             .setType(MultipartBody.FORM)
-            .addFormDataPart("identity","20220920001")
+            .addFormDataPart("identity","20220927001")
             .addFormDataPart("image", "photo.jpg", ProgressRequestBody("image/*".toMediaTypeOrNull(), FILE_IMAGE))
             .build()
 
@@ -45,7 +45,6 @@ class PostClass() {
             if (response.isSuccessful){
                 val recbody = response.body
                 result = recbody!!.string()
-                //println(result)   // Print received result
             }
             response.close()
         } catch (e:Exception){

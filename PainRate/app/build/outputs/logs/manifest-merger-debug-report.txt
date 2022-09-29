@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [androidx.databinding:viewbinding:7.2.2] C:\Users\14507\.gradle\caches\transforms-3\635c0edf1609b07ae39ddcd95d43175a\transformed\viewbinding-7.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\14507\.gradle\caches\transforms-3\70587652de7b4080984b934f0caeeace\transformed\core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.6.0] C:\Users\14507\.gradle\caches\transforms-3\ae4c2cc8c003b44a4fb6d6263f883f0f\transformed\material-1.6.0\AndroidManifest.xml:17:1-26:12
@@ -45,20 +45,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\14507\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\14507\.gradle\caches\transforms-3\a330faa623d85bcb04d8fd83ffee90c2\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\14507\.gradle\caches\transforms-3\43aba1e7f277efc3bbc95290b55e3aec\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\14507\.gradle\caches\transforms-3\cf6f2108b50d3cd71d64e4f4c1030ef7\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-50:12
 	package
 		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
 		INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-55:12
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-50:12
 		INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-55:12
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:1-50:12
 		INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:2:11-69
@@ -67,23 +67,23 @@ ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate
 	android:name
 		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:5:22-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:11:5-79
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:11:22-76
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.INTERNET
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:12:5-67
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:12:22-64
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:7:22-64
 queries
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:14:5-18:15
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:9:5-13:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:15:9-17:18
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:10:9-12:18
 action#android.media.action.IMAGE_CAPTURE
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:16:13-73
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:11:13-73
 	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:16:21-70
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:11:21-70
 application
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:20:5-53:19
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:15:5-48:19
 MERGED from [com.google.android.material:material:1.6.0] C:\Users\14507\.gradle\caches\transforms-3\ae4c2cc8c003b44a4fb6d6263f883f0f\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.0] C:\Users\14507\.gradle\caches\transforms-3\ae4c2cc8c003b44a4fb6d6263f883f0f\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\14507\.gradle\caches\transforms-3\d912cc0b0f418882aff65c5d301b9ca1\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -101,61 +101,61 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\14507\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\14507\.gradle\caches\transforms-3\0d9ff9c5c657323091c4860d49fad23b\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:25:9-35
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:23:9-41
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:18:9-41
 	android:roundIcon
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:24:9-54
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:19:9-54
 	android:icon
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:22:9-43
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:26:9-50
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:21:9-50
 activity#com.example.PainRate.Results
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:27:9-29:40
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:23:13-56
+provider#androidx.core.content.FileProvider
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:26:9-34:20
+	android:grantUriPermissions
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:30:13-47
+	android:authorities
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:28:13-68
 	android:exported
 		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:28:13-56
-provider#androidx.core.content.FileProvider
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:31:9-39:20
-	android:grantUriPermissions
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:35:13-47
-	android:authorities
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:33:13-68
-	android:exported
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:34:13-37
-	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:32:13-62
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:27:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:36:13-38:56
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:31:13-33:56
 	android:resource
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:38:17-53
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:33:17-53
 	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:37:17-67
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:32:17-67
 activity#com.example.PainRate.Scanning
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:41:9-43:40
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:43:13-37
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:42:13-57
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:37:13-57
 activity#com.example.PainRate.MainActivity
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:44:9-52:20
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:39:9-47:20
 	android:exported
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:46:13-36
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:41:13-36
 	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:45:13-61
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:40:13-61
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:47:13-51:29
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:42:13-46:29
 action#android.intent.action.MAIN
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:48:17-69
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:48:25-66
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:43:25-66
 category#android.intent.category.LAUNCHER
-ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:50:17-77
+ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:50:27-74
+		ADDED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:45:27-74
 uses-sdk
 INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml

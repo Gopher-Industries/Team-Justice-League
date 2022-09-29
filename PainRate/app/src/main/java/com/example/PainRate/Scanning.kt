@@ -22,6 +22,8 @@ import java.io.File
 private const val REQUEST_CODE = 1
 private const val FILE_NAME = "photo.jpg"
 
+
+
 // photo file variable representing the location where the camera application should write the image captured
 private lateinit var photoFile: File
 
@@ -86,7 +88,6 @@ class Scanning : AppCompatActivity() {
                 println("File not found!")
             } else {
                 val result= conn.clientOkHttp(file)
-                println("testing!!\n\n\n\n")
                 println(result)
                 analysisResult = JsonMapper.mapToAnalysisResult(result)
             }
@@ -109,7 +110,10 @@ class Scanning : AppCompatActivity() {
             // means successfully taken a picture from the camera
 
             // reads image from specified file to put to the ImageView
-            val takenImage = BitmapFactory.decodeFile(photoFile.absolutePath)
+            // val takenImage = BitmapFactory.decodeFile(photoFile.absolutePath)
+            val path = "/sdcard/Android/data/com.example.PainRate/files/Pictures/example-target-frame.png"
+            val file = File(path)
+            val takenImage = BitmapFactory.decodeFile(file.absolutePath)
             val imageView = findViewById<ImageView>(R.id.imgvwPhoto)
             imageView.setImageBitmap(takenImage)
         }
