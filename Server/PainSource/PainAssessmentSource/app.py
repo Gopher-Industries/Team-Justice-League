@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, abort, send_from_directory
 import cv2
 import os
+import glob
 import base64
 import numpy as np
 #import PainCNN16 as pain_detector
@@ -12,7 +13,6 @@ app = Flask(__name__)
 
 #app.config['MAX_CONTENT_LENGTH'] = 1024 * 1024
 app.config['UPLOAD_EXTENSIONS'] = ['.jpg', '.png', '.gif']
-app.config['UPLOAD_PATH'] = 'uploads'
 app.config['REFERENCE_FRAME_PATH'] = 'ReferenceFrames'
 app.config['TARGET_FRAME_PATH'] = 'TargetFrames'
 
@@ -24,6 +24,9 @@ data = {
   "PainRate": 5.0,
   "id": "test_name"
 }
+
+
+
 
 def pretty_print_POST(req):
     """
@@ -43,7 +46,10 @@ def pretty_print_POST(req):
 
 @app.route('/')
 def index():
-    #files = os.listdir(app.config['UPLOAD_PATH'])
+    files = os.listdir(app.config['REFERENCE_FRAME_PATH'])
+    for f in files:
+        read_path = os.path.join(app.config['REFERENCE_FRAME_PATH'], f)
+        os.remove(read_path)
     files = os.listdir(app.config['REFERENCE_FRAME_PATH'])
     return render_template('index.html', files=files)
 
@@ -53,22 +59,47 @@ def upload_files():
         filename = secure_filename(uploaded_file.filename)
         if filename != '':
             file_ext = os.path.splitext(filename)[1]
-            #if file_ext not in app.config['UPLOAD_EXTENSIONS'] or \
-            #        file_ext != validate_image(uploaded_file.stream):
-            #    abort(400)
             uploaded_file.save(os.path.join(app.config['REFERENCE_FRAME_PATH'], filename))
-    return redirect(url_for('index'))
+            read_path = os.path.join(app.config['REFERENCE_FRAME_PATH'], filename)
+
+            image = cv2.imread(read_path)
+            pain_detector.add_references([image])
+            print("Added ref images")
+    return redirect(url_for('webtest'))
 
 @app.route('/uploads/<filename>')
 def upload(filename):
-    #return send_from_directory(app.config['UPLOAD_PATH'], filename)
     return send_from_directory(app.config['REFERENCE_FRAME_PATH'], filename)
 
-@app.route('/webtest', methods=['GET', 'POST'])
+@app.route('/webtest')
+def display_target():
+    files = os.listdir(app.config['TARGET_FRAME_PATH'])
+    for f in files:
+        read_path = os.path.join(app.config['TARGET_FRAME_PATH'], f)
+        os.remove(read_path)
+    files = os.listdir(app.config['TARGET_FRAME_PATH'])
+    return render_template('webtest.html', files=files)
+
+@app.route('/webtest', methods=['POST'])
 def webtest():
-    if request.method == 'POST':
-        pass
-    return "webtest"
+    uploaded_file = request.files['file']
+    filename = secure_filename(uploaded_file.filename)
+    if filename != '':
+        file_ext = os.path.splitext(filename)[1]
+        uploaded_file.save(os.path.join(app.config['TARGET_FRAME_PATH'], filename))
+        read_path = os.path.join(app.config['TARGET_FRAME_PATH'], filename)
+    image = cv2.imread(read_path)
+    pain_estimate = pain_detector.predict_pain(image)
+    print("Pain :", pain_estimate)
+    #return redirect(url_for('display_target'))
+    files_ref = os.listdir(app.config['REFERENCE_FRAME_PATH'])
+    files_target = os.listdir(app.config['TARGET_FRAME_PATH'])
+    return render_template('result.html', output=pain_estimate, files_ref=files_ref, files_target=files_target)
+
+@app.route('/uploads_target/<filename>')
+def upload_target(filename):
+    return send_from_directory(app.config['TARGET_FRAME_PATH'], filename)
+
 
 @app.route('/test', methods=['GET','POST'])
 def salvador():
