@@ -1,0 +1,9 @@
+,Image,Brightness status,Brightness level,Focus status,Focus level,Distance status,Distance,Face count,Quality
+0,N/A,N/A,0,N/A,0,N/A,0,0,FAIL
+0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test1.png,Good,133.28,Sharp,1032.3696219582725,Good,26.44,1,PASS
+0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test2.png,Good,118.22,Blurry,196.03993131151668,face too far,12.92,1,FAIL
+0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test3.png,Good,129.1,Sharp,1341.9855164140556,Good,48.47,1,PASS
+0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test4.png,Too Bright,192.16,Sharp,647.9511045361262,Good,26.05,2,FAIL
+0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test5.png,Dark,55.5,Blurry,397.2428854133843,Good,23.2,1,FAIL
+0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test6.png,Good,79.52,Sharp,577.6544237089777,Good,24.66,1,PASS
+0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test7.png,Good,120.62,Blurry,421.2777707655165,Good,20.74,3,FAIL
