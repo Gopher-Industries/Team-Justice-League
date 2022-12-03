@@ -1,9 +1,19 @@
-,Image,Brightness status,Brightness level,Focus status,Focus level,Distance status,Distance,Face count,Quality
-0,N/A,N/A,0,N/A,0,N/A,0,0,FAIL
-0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test1.png,Good,133.28,Sharp,1032.3696219582725,Good,26.44,1,PASS
-0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test2.png,Good,118.22,Blurry,196.03993131151668,face too far,12.92,1,FAIL
-0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test3.png,Good,129.1,Sharp,1341.9855164140556,Good,48.47,1,PASS
-0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test4.png,Too Bright,192.16,Sharp,647.9511045361262,Good,26.05,2,FAIL
-0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test5.png,Dark,55.5,Blurry,397.2428854133843,Good,23.2,1,FAIL
-0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test6.png,Good,79.52,Sharp,577.6544237089777,Good,24.66,1,PASS
-0,/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/sampleFaces/Test7.png,Good,120.62,Blurry,421.2777707655165,Good,20.74,3,FAIL
+0,N/A,N/A,0,N/A,0,N/A,0,0,0,0,FAIL
+0,Test1.png,Good,133.28,Sharp,1032.3696219582725,Good,26.44,1,86.68,"X1289, Y1611",PASS
+0,Test2.png,Good,118.22,Blurry,196.03993131151668,face too far,12.92,1,86.68,"X1289, Y1611",FAIL
+0,Test3.png,Good,129.1,Sharp,1341.9855164140556,Good,48.47,1,80.14,"X740, Y1080",PASS
+0,Test4.png,Good,151.05,Sharp,602.4072758651733,Good,26.23,1,59.19,"X883, Y701",PASS
+0,Test5.png,Dark,55.5,Blurry,397.2428854133843,Good,23.2,1,59.19,"X883, Y701",FAIL
+0,Test6.png,Good,79.52,Sharp,577.6544237089777,Good,24.66,1,69.82,"X995, Y1635",PASS
+0,Test7.png,Good,120.62,Blurry,421.2777707655165,Good,20.74,3,69.82,"X995, Y1635",FAIL
+0,Test8.png,Good,104.72,Sharp,5342.956293454257,Good,26.28,1,81.93,"X1377, Y1677",PASS
+0,Test9.png,Good,131.49,Sharp,2725.662629531141,face too far,16.92,1,81.93,"X1377, Y1677",FAIL
+0,Test10.png,Good,131.82,Sharp,3041.5160600884337,face too far,10.83,2,81.93,"X1377, Y1677",FAIL
+0,Test11.png,Good,143.37,Sharp,3741.8125423903825,Good,23.23,2,72.43,"X1298, Y1502",PASS
+0,Test12.png,Good,121.49,Blurry,264.621509688307,face too far,6.64,1,72.43,"X1298, Y1502",FAIL
+0,Test13.png,Good,130.02,Sharp,1301.150835684889,face too far,6.02,1,72.43,"X1298, Y1502",FAIL
+0,Test14.png,Dark,68.27,Blurry,365.01092765835904,Good,26.78,1,72.43,"X1298, Y1502",FAIL
+0,Test15.png,Good,93.79,Sharp,795.273679649353,face too far,13.52,1,72.43,"X1298, Y1502",FAIL
+0,Test16.png,Dark,31.3,Blurry,67.8806085155165,face too far,16.17,1,72.43,"X1298, Y1502",FAIL
+0,Test17.png,Good,134.44,Sharp,1108.7796909023439,Good,25.49,2,90.61,"X3177, Y1554",PASS
+0,Test18.png,Good,123.39,Sharp,766.6719772677341,Good,25.33,3,74.63,"X1374, Y949",PASS
