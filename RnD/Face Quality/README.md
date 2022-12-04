@@ -38,3 +38,6 @@ This feature is currently implemented by reading in data from a local CSV file t
 The image quality will be positioned right after each user takes an image. All the computation will be done on the mobile device as it is lightweight enough to not disturbe the user experience.
 
 #### Sample input / output files
+
+  
+![FaceDetectOutputSample]{https://github.com/nadavfedida/Team-Justice-League/blob/ImageQuality/RnD/Face%20Quality/FaceMesh18.jpg}
