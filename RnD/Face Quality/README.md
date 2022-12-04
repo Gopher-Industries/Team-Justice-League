@@ -39,5 +39,9 @@ The image quality will be positioned right after each user takes an image. All t
 
 #### Sample input / output files
 
+
+![image](https://user-images.githubusercontent.com/62866537/205485368-a13e0ede-b1e7-4057-945a-33c7ad023dac.png)
+
+<img width="1170" alt="project path" src="https://user-images.githubusercontent.com/62866537/205485392-f0ebffff-12a0-4799-bde2-83a608321163.png">
+
   
-![FaceDetectOutputSample]{FaceMesh18.jpg "Output file"}
