@@ -40,4 +40,4 @@ The image quality will be positioned right after each user takes an image. All t
 #### Sample input / output files
 
   
-![FaceDetectOutputSample]{https://github.com/nadavfedida/Team-Justice-League/blob/ImageQuality/RnD/Face%20Quality/FaceMesh18.jpg}
+![FaceDetectOutputSample]{https://github.com/nadavfedida/Team-Justice-League/blob/ImageQuality/RnD/Face%20Quality/FaceMesh18.jpg "Output file"}
