@@ -19,7 +19,11 @@ import sys
 
 
 def main():
+
     path = '/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/Project/Team-Justice-League/RnD/Face Quality/faces.csv'
+
+    LIST = []
+
     Headers = ['Image Path',\
             'Image Brightness - Status',\
             'Image Brightness - Level',\
@@ -52,6 +56,7 @@ def main():
                     'Y_loc': ''}},\
             'PASS': ""}
 
+
     Input = pd.read_csv(path, index_col = False)
     detector = FaceDetector()
 
@@ -60,6 +65,7 @@ def main():
         writer = csv.DictWriter(f, fieldnames=RESULTS.keys())
         writer.writeheader()
         
+
         for i in range(len(Input)):
             #save path as image - later change to incoming image
             image = cv2.imread(Input["path"][i])
@@ -68,6 +74,7 @@ def main():
             fileName = root.split('/')
             fileName = fileName[-1]
             RESULTS['Image Path']= fileName + ext
+
 
             #brightness test
             BS ,BL, BrightnessFlag = testBrightness(image)
@@ -95,12 +102,14 @@ def main():
             if  BS == 'Good' and FS == 'Sharp' and Dist_status == 'Good':
                 
                 #Find face mesh and nose position to determine if face is not close to centre
+
                 #find face mesh
                 FaceMesh =  detector.findFaceMesh(image)   
                 
                 #find nose Location on image            
                 scroe, Xloc, Yloc = detector.findNose(image, i)          
             
+<
                 ### ENABLE BELOW TO SAVE IMAGE WITH FACEMESH + NOSE CROSS     
                 #cv2.imwrite('FaceMesh{}.jpg'.format(i+1), FaceMesh)
                     ## cv2.imshow('image', FaceMesh)
@@ -109,20 +118,24 @@ def main():
                 RESULTS['Face']['Nose']['X_loc'] = Xloc
                 RESULTS['Face']['Nose']['Y_loc'] = Yloc
                 RESULTS['PASS'] = 'PASS'
+
             
             else:
                 RESULTS['Face']['Confidence'] = ""
                 RESULTS['Face']['Nose']['X_loc'] = ""
                 RESULTS['Face']['Nose']['Y_loc'] = ""
 
+                RESULTS['PASS'] = False
+
                 # print(json.dumps(RESULTS, indent=4))
                 
             #prepare data to be sent as JSON
             DataJson = json.dumps(RESULTS, indent= 4)
             #*************  EXPORT DataJson  ******************** 
-        
+
             # Export to CSV - ROW
             writer.writerow(RESULTS) #***WORKS***
+
 
 
         

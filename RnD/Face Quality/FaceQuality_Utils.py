@@ -68,9 +68,13 @@ def blurrinesDetection(img):
     Focus_Level = variance_of_laplacian(img)
     if Focus_Level < THRESHOLD:
         Focus_Status = "Blurry"
+
         return Focus_Status , round(Focus_Level,2), True
     else:
         return Focus_Status , round(Focus_Level,2), False
+
+    return Focus_Status , round(Focus_Level,2)
+
 
 def laplaceEdgeVariance(path):
     # Load image
