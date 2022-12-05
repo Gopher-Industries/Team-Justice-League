@@ -1,0 +1,169 @@
+[{
+    "Image Path": "Test1.png",
+    "Brightness": {
+        "Status": "Good",
+        "Level": 133.28
+    },
+    "Focus": {
+        "Status": "Sharp",
+        "Level": 1032.37
+    },
+    "Face": {
+        "Status": "Good",
+        "Distance": 26.44,
+        "Count": 1,
+        "Confidence": 86.68,
+        "Nose": {
+            "X_loc": 1289,
+            "Y_loc": 1611
+        }
+    },
+    "PASS": true
+},{
+    "Image Path": "Test3.png",
+    "Brightness": {
+        "Status": "Good",
+        "Level": 129.1
+    },
+    "Focus": {
+        "Status": "Sharp",
+        "Level": 1341.99
+    },
+    "Face": {
+        "Status": "Good",
+        "Distance": 48.47,
+        "Count": 1,
+        "Confidence": 80.14,
+        "Nose": {
+            "X_loc": 740,
+            "Y_loc": 1080
+        }
+    },
+    "PASS": true
+},{ 
+    "Image Path": "Test4.png",
+    "Brightness": {
+        "Status": "Good",
+        "Level": 151.05
+    },
+    "Focus": {
+        "Status": "Sharp",
+        "Level": 602.41
+    },
+    "Face": {
+        "Status": "Good",
+        "Distance": 26.23,
+        "Count": 1,
+        "Confidence": 59.19,
+        "Nose": {
+            "X_loc": 883,
+            "Y_loc": 701
+        }
+    },
+    "PASS": true
+},{
+    "Image Path": "Test6.png",
+    "Brightness": {
+        "Status": "Good",
+        "Level": 79.52
+    },
+    "Focus": {
+        "Status": "Sharp",
+        "Level": 577.65
+    },
+    "Face": {
+        "Status": "Good",
+        "Distance": 24.66,
+        "Count": 1,
+        "Confidence": 69.82,
+        "Nose": {
+            "X_loc": 995,
+            "Y_loc": 1635
+        }
+    },
+    "PASS": true
+},{
+    "Image Path": "Test8.png",
+    "Brightness": {
+        "Status": "Good",
+        "Level": 104.72
+    },
+    "Focus": {
+        "Status": "Sharp",
+        "Level": 5342.96
+    },
+    "Face": {
+        "Status": "Good",
+        "Distance": 26.28,
+        "Count": 1,
+        "Confidence": 81.93,
+        "Nose": {
+            "X_loc": 1377,
+            "Y_loc": 1677
+        }
+    },
+    "PASS": true
+},{
+    "Image Path": "Test11.png",
+    "Brightness": {
+        "Status": "Good",
+        "Level": 143.37
+    },
+    "Focus": {
+        "Status": "Sharp",
+        "Level": 3741.81
+    },
+    "Face": {
+        "Status": "Good",
+        "Distance": 23.23,
+        "Count": 2,
+        "Confidence": 72.43,
+        "Nose": {
+            "X_loc": 1298,
+            "Y_loc": 1502
+        }
+    },
+    "PASS": true
+},{
+    "Image Path": "Test17.png",
+    "Brightness": {
+        "Status": "Good",
+        "Level": 134.44
+    },
+    "Focus": {
+        "Status": "Sharp",
+        "Level": 1108.78
+    },
+    "Face": {
+        "Status": "Good",
+        "Distance": 25.49,
+        "Count": 2,
+        "Confidence": 90.61,
+        "Nose": {
+            "X_loc": 3177,
+            "Y_loc": 1554
+        }
+    },
+    "PASS": true
+},{
+    "Image Path": "Test18.png",
+    "Brightness": {
+        "Status": "Good",
+        "Level": 123.39
+    },
+    "Focus": {
+        "Status": "Sharp",
+        "Level": 766.67
+    },
+    "Face": {
+        "Status": "Good",
+        "Distance": 25.33,
+        "Count": 3,
+        "Confidence": 74.63,
+        "Nose": {
+            "X_loc": 1374,
+            "Y_loc": 949
+        }
+    },
+    "PASS": true
+}]
