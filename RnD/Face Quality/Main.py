@@ -11,9 +11,10 @@ import cv2
 import pandas as pd
 import csv
 import os
-
+import json
 
 def main():
+  
     df = pd.read_csv('faces.csv', index_col = False)
     data = [{'Image Path': 'N/A',\
             'Brightness status':'N/A',\
@@ -63,10 +64,7 @@ def main():
             print(f'checking image {i+1}')
             RESULTS['Quality'] = 'PASS'
             #Find face mesh and nose position to determine if face is not close to centre
-            
-            #convert to RGB format
-            # imgRGB = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) 
-            
+
             #find face mesh
             FaceMesh =  detector.findFaceMesh(image)   
             
@@ -79,9 +77,13 @@ def main():
             RESULTS['conf_score']= scroe
             RESULTS['X_Y']= f'X{Xloc}, Y{Yloc}'
 
+        else:
+            RESULTS['Quality'] = 'FAIL'
+            RESULTS['conf_score']= ""
+            RESULTS['X_Y']= ""
+
         #write results to CSV output
         RESULTS.to_csv('ImageQuality.csv', mode ='a', header=False)
-
 
 if __name__ == "__main__":
     main()
