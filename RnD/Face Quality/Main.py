@@ -44,21 +44,23 @@ def main():
         RESULTS['Quality']= 'FAIL'
 
         #brightness test
-        BS ,BL = testBrightness(image)
+        BS ,BL , BrightnessFlag = testBrightness(image)
         RESULTS['Brightness status']= BS
         RESULTS['Brightness level']= BL
-
+        if BrightnessFlag:
+            RESULTS['Quality']= 'FAIL - Brightness'
         #Focus test
         FS, FL = blurrinesDetection(image)
         RESULTS['Focus status']= FS
         RESULTS['Focus level']= FL
 
         #Head count test
-        Dist_status , H_percent , count = faceDetect(image, i)
+        Dist_status , H_percent , count , DistFlag = faceDetect(image, i)
         RESULTS['Distance status']= Dist_status
         RESULTS['Distance']= H_percent
         RESULTS['Face count']= count
-        
+        if DistFlag:
+            RESULTS['Quality']= 'FAIL - Distance'
         #Overall quality check
         if  BS == 'Good' and FS == 'Sharp' and Dist_status == 'Good':
             print(f'checking image {i+1}')
