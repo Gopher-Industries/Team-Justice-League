@@ -34,18 +34,18 @@ BIGHTNESS_LEVEL_HIGH = 170
 
 def testBrightness(img):
     frame_gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-    Brightness_status , Brightness_level = algo_findDark(frame_gray)
-    return Brightness_status , Brightness_level
+    Brightness_status , Brightness_level, flag = algo_findDark(frame_gray)
+    return Brightness_status , Brightness_level, flag
 
 def algo_findDark(image):
     blur = cv2.blur(image, (5, 5))
     mean = round(np.mean(blur),2)
     if mean < BIGHTNESS_LEVEL_LOW:
-        return 'Dark', mean
+        return 'Dark', mean , True
     elif mean > BIGHTNESS_LEVEL_LOW and mean < BIGHTNESS_LEVEL_HIGH:
-        return 'Good', mean
+        return 'Good', mean, False
     else:
-        return 'Too Bright' , mean
+        return 'Too Bright' , mean, True
 
 # ********** IMAGE FOCUS ****************
 
@@ -68,6 +68,11 @@ def blurrinesDetection(img):
     Focus_Level = variance_of_laplacian(img)
     if Focus_Level < THRESHOLD:
         Focus_Status = "Blurry"
+
+        return Focus_Status , round(Focus_Level,2), True
+    else:
+        return Focus_Status , round(Focus_Level,2), False
+
     return Focus_Status , round(Focus_Level,2)
 
 
@@ -125,9 +130,9 @@ def faceDetect(img, index):
         #  **** Send image here to serve  ****
         if dist_status == 'Good':
             # cv2.imwrite('{}.jpg'.format(index+1), faces)        # To print faces
-            return dist_status, percent , 1
+            return dist_status, percent , 1, False
         else:
-            return dist_status, percent , 1
+            return dist_status, percent , 1, True
 
     # if more than 1 face in image      
     else:
@@ -140,6 +145,46 @@ def faceDetect(img, index):
         # cv2.imwrite('{}largest.jpg'.format(index+1), faces[largest[1]])        # To print faces
         x1, y1, w1, h1 = faces[largest[1]]
         LH_dist, LH_percent =  HeadPercent(img, w1, h1)
-        return LH_dist, LH_percent , count
+        return LH_dist, LH_percent , count, False
 
 
+def normalize_json(data: dict) -> dict:
+  
+    new_data = dict()
+    for key, value in data.items():
+        if not isinstance(value, dict):
+            new_data[key] = value
+        else:
+            for k, v in value.items():
+                if not isinstance(v, dict):
+                    new_data[key + "_" + k] = v
+                else:
+                    for a, b in v.items():
+                        new_data[key + "_" + k + "_" + a] = b
+    return new_data
+
+def generate_csv_data(data, i) -> str:
+  
+    # Defining CSV columns in a list to maintain
+    # the order
+    csv_columns = data.keys()
+    
+    if i == 0:
+        # Generate the first row of CSV 
+        csv_data = ",".join(csv_columns) + "\n"
+  
+        # Generate the single record present
+        new_row = list()
+        for col in csv_columns:
+            new_row.append(str(data[col]))
+    
+        # Concatenate the record with the column information 
+        # in CSV format
+        csv_data += ",".join(new_row) + "\n"
+    
+        return csv_data
+    else:
+        new_row = list()
+        for col in csv_columns:
+            new_row.append(str(data[col]))
+        return new_row

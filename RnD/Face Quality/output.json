@@ -1,0 +1,1 @@
+{"Image Path": "Test18.png", "Brightness": {"Status": "Good", "Level": 123.39}, "Focus": {"Status": "Sharp", "Level": 766.67}, "Face": {"Status": "Good", "Distance": 25.33, "Count": 3, "Confidence": 74.63, "Nose": {"X_loc": 1374, "Y_loc": 949}}, "PASS": "PASS"}

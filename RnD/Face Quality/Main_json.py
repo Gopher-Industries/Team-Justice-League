@@ -19,7 +19,11 @@ import sys
 
 
 def main():
+
+    path = '/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/Project/Team-Justice-League/RnD/Face Quality/faces.csv'
+
     LIST = []
+
     Headers = ['Image Path',\
             'Image Brightness - Status',\
             'Image Brightness - Level',\
@@ -52,13 +56,15 @@ def main():
                     'Y_loc': ''}},\
             'PASS': ""}
 
-    Input = pd.read_csv('faces.csv', index_col = False)
+
+    Input = pd.read_csv(path, index_col = False)
     detector = FaceDetector()
 
     #Export to CSV - Create file and write headers
-    with open('TEST1.csv', 'w', newline='') as f:
+    with open('TEST3.csv', 'w+') as f:
         writer = csv.DictWriter(f, fieldnames=RESULTS.keys())
         writer.writeheader()
+        
 
         for i in range(len(Input)):
             #save path as image - later change to incoming image
@@ -71,24 +77,30 @@ def main():
 
 
             #brightness test
-            BS ,BL = testBrightness(image)
+            BS ,BL, BrightnessFlag = testBrightness(image)
             RESULTS['Brightness']['Status']=BS
             RESULTS['Brightness']['Level']= BL
+            if BrightnessFlag:
+                RESULTS['PASS']= 'FAIL - Brightness'
 
             #Focus test
-            FS, FL = blurrinesDetection(image)
+            FS, FL, FocusFlag = blurrinesDetection(image)
             RESULTS['Focus']['Status']= FS
             RESULTS['Focus']['Level']= FL
+            if FocusFlag:
+                RESULTS['PASS']= 'FAIL - Focus'
 
             #Head count test
-            Dist_status , H_percent , count = faceDetect(image, i)
+            Dist_status , H_percent , count ,DistFlag = faceDetect(image, i)
             RESULTS['Face']['Status'] = Dist_status
             RESULTS['Face']['Distance'] = H_percent
             RESULTS['Face']['Count']= count
-            
+
+            if DistFlag:
+                RESULTS['PASS']= 'FAIL - Distance'
             #Overall quality check
             if  BS == 'Good' and FS == 'Sharp' and Dist_status == 'Good':
-                print(f'checking image {i+1}')
+                
                 #Find face mesh and nose position to determine if face is not close to centre
 
                 #find face mesh
@@ -97,19 +109,24 @@ def main():
                 #find nose Location on image            
                 scroe, Xloc, Yloc = detector.findNose(image, i)          
             
-                # cv2.imshow('image', FaceMesh)
-                cv2.imwrite('FaceMesh{}.jpg'.format(i+1), FaceMesh)
-            
+<
+                ### ENABLE BELOW TO SAVE IMAGE WITH FACEMESH + NOSE CROSS     
+                #cv2.imwrite('FaceMesh{}.jpg'.format(i+1), FaceMesh)
+                    ## cv2.imshow('image', FaceMesh)
+
                 RESULTS['Face']['Confidence'] = scroe
                 RESULTS['Face']['Nose']['X_loc'] = Xloc
                 RESULTS['Face']['Nose']['Y_loc'] = Yloc
-                RESULTS['PASS'] = True
+                RESULTS['PASS'] = 'PASS'
+
             
             else:
                 RESULTS['Face']['Confidence'] = ""
                 RESULTS['Face']['Nose']['X_loc'] = ""
                 RESULTS['Face']['Nose']['Y_loc'] = ""
+
                 RESULTS['PASS'] = False
+
                 # print(json.dumps(RESULTS, indent=4))
                 
             #prepare data to be sent as JSON
@@ -118,7 +135,6 @@ def main():
 
             # Export to CSV - ROW
             writer.writerow(RESULTS) #***WORKS***
-
 
 
 

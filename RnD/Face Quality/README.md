@@ -44,4 +44,36 @@ The image quality will be positioned right after each user takes an image. All t
 
 <img width="1170" alt="project path" src="https://user-images.githubusercontent.com/62866537/205485392-f0ebffff-12a0-4799-bde2-83a608321163.png">
 
-  
+
+#### Sample JSON output
+```json
+{
+    "Image Path": "Test1.png",
+    "Brightness": {
+        "Status": "Good",
+        "Level": 133.28
+    },
+    "Focus": {
+        "Status": "Sharp",
+        "Level": 1032.37
+    },
+    "Face": {
+        "Status": "Good",
+        "Distance": 26.44,
+        "Count": 1,
+        "Confidence": 86.68,
+        "Nose": {
+            "X_loc": 1289,
+            "Y_loc": 1611
+        }
+    },
+    "PASS": true
+}
+```
+
+
+##### NOTE 1.0
+Added JSON file exporting to allow for ease of compilation and the ability to send as a single object from mobile to backend. 
+
+##### NOTE 1.1
+Added Where each test fails to the PASS/FAIL column. This will indicate to us and the (and in turn) the user where the image needs to be improved in order to be processed for pain assessment.
