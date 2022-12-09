@@ -15,7 +15,7 @@ def test_read_data():
     test = newSetup.read_data()
     assert isinstance(test, pandas.core.frame.DataFrame)
 
-
+ 
 def test_get_image_extenstion():
     newSetup = Setup
     Input = newSetup.read_data()
