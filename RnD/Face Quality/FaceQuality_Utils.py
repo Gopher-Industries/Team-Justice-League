@@ -3,8 +3,8 @@ import cv2
 import pandas as pd
 import os 
 import math
-from cv2 import IMREAD_COLOR,IMREAD_UNCHANGED
-import csv
+# from cv2 import IMREAD_COLOR,IMREAD_UNCHANGED
+
 
 # useful packeges
 import numpy as np
@@ -30,9 +30,7 @@ BIGHTNESS_LEVEL_HIGH = 170
 
 # ********** IMAGE BRIGHTNESS ****************
 
-
-
-def testBrightness(img):
+def BrightnessTest(img):
     frame_gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     Brightness_status , Brightness_level, flag = algo_findDark(frame_gray)
     return Brightness_status , Brightness_level, flag

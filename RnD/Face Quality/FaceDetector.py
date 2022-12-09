@@ -4,7 +4,6 @@ import mediapipe as mp
 # useful packeges
 import numpy as np
 import pandas as pd
-import sys
 import math
 
 class FaceDetector():
@@ -39,7 +38,7 @@ class FaceDetector():
     
     def findNose(self, image, index):
         with self.face_detection.FaceDetection(model_selection=0, min_detection_confidence=0.5) as face_detection:
-            self.FaceResults = face_detection.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB)) #was imgRGB
+            self.FaceResults = face_detection.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB)) 
             # NoseLocation = image.copy()
 
             if self.FaceResults.detections:
@@ -56,7 +55,6 @@ class FaceDetector():
 
                     X_len = 100
                     # Drawing the lines
-                    # cv2.line(image, (X + X_len , Y + X_len), (height, width), (255, 0, 0), 5)
                     cv2.line(image, (X - X_len, Y - X_len), (X + X_len, Y + X_len), (0, 255, 0), 5)
                     cv2.line(image, (X + X_len, Y - X_len), (X - X_len, Y + X_len), (0, 255, 0), 5)
 
