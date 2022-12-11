@@ -5,7 +5,7 @@ import os
 
 
 def get_path():
-    return r'/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/Project/Team-Justice-League/RnD/Face Quality/faces.csv'
+    return r'/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/Project/RnD/Face Quality/faces.csv'
 
 def read_data():
     path = get_path()
@@ -21,4 +21,3 @@ def get_image_name(file):
     fileName = fileName[-1]
     return fileName, ext
 
-        

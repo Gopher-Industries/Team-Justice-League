@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(1, '/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/Project/Team-Justice-League/RnD/Face Quality')
+sys.path.insert(1, '/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/Project/RnD/Face Quality')
 
 import Setup
 import pandas 
