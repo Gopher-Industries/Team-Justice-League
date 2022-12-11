@@ -3,8 +3,8 @@ import cv2
 import pandas as pd
 import os 
 import math
-from cv2 import IMREAD_COLOR,IMREAD_UNCHANGED
-import csv
+# from cv2 import IMREAD_COLOR,IMREAD_UNCHANGED
+
 
 # useful packeges
 import numpy as np
@@ -30,9 +30,7 @@ BIGHTNESS_LEVEL_HIGH = 170
 
 # ********** IMAGE BRIGHTNESS ****************
 
-
-
-def testBrightness(img):
+def BrightnessTest(img):
     frame_gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     Brightness_status , Brightness_level, flag = algo_findDark(frame_gray)
     return Brightness_status , Brightness_level, flag
@@ -42,10 +40,13 @@ def algo_findDark(image):
     mean = round(np.mean(blur),2)
     if mean < BIGHTNESS_LEVEL_LOW:
         return 'Dark', mean , True
+
     elif mean > BIGHTNESS_LEVEL_LOW and mean < BIGHTNESS_LEVEL_HIGH:
         return 'Good', mean, False
+
     else:
         return 'Too Bright' , mean, True
+
 
 # ********** IMAGE FOCUS ****************
 
@@ -68,12 +69,11 @@ def blurrinesDetection(img):
     Focus_Level = variance_of_laplacian(img)
     if Focus_Level < THRESHOLD:
         Focus_Status = "Blurry"
-
         return Focus_Status , round(Focus_Level,2), True
     else:
         return Focus_Status , round(Focus_Level,2), False
 
-    return Focus_Status , round(Focus_Level,2)
+
 
 
 def laplaceEdgeVariance(path):
@@ -147,6 +147,47 @@ def faceDetect(img, index):
         LH_dist, LH_percent =  HeadPercent(img, w1, h1)
         return LH_dist, LH_percent , count, False
 
+
+def normalize_json(data: dict) -> dict:
+  
+    new_data = dict()
+    for key, value in data.items():
+        if not isinstance(value, dict):
+            new_data[key] = value
+        else:
+            for k, v in value.items():
+                if not isinstance(v, dict):
+                    new_data[key + "_" + k] = v
+                else:
+                    for a, b in v.items():
+                        new_data[key + "_" + k + "_" + a] = b
+    return new_data
+
+def generate_csv_data(data, i) -> str:
+  
+    # Defining CSV columns in a list to maintain
+    # the order
+    csv_columns = data.keys()
+    
+    if i == 0:
+        # Generate the first row of CSV 
+        csv_data = ",".join(csv_columns) + "\n"
+  
+        # Generate the single record present
+        new_row = list()
+        for col in csv_columns:
+            new_row.append(str(data[col]))
+    
+        # Concatenate the record with the column information 
+        # in CSV format
+        csv_data += ",".join(new_row) + "\n"
+    
+        return csv_data
+    else:
+        new_row = list()
+        for col in csv_columns:
+            new_row.append(str(data[col]))
+        return new_row
 
 def normalize_json(data: dict) -> dict:
   
