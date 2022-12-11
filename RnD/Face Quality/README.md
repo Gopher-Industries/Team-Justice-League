@@ -77,3 +77,6 @@ Added JSON file exporting to allow for ease of compilation and the ability to se
 
 ##### NOTE 1.1
 Added Where each test fails to the PASS/FAIL column. This will indicate to us and the (and in turn) the user where the image needs to be improved in order to be processed for pain assessment.
+
+## Unit testing V1.0
+<img width="689" alt="Unit testing_V1" src="https://user-images.githubusercontent.com/62866537/206883860-326bea33-b5b9-4cd6-8917-b88ce78184f7.png">
