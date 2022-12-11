@@ -40,13 +40,13 @@ def algo_findDark(image):
     mean = round(np.mean(blur),2)
     if mean < BIGHTNESS_LEVEL_LOW:
         return 'Dark', mean , True
-        return 'Dark', mean , True
+
     elif mean > BIGHTNESS_LEVEL_LOW and mean < BIGHTNESS_LEVEL_HIGH:
         return 'Good', mean, False
-        return 'Good', mean, False
+
     else:
         return 'Too Bright' , mean, True
-        return 'Too Bright' , mean, True
+
 
 # ********** IMAGE FOCUS ****************
 
@@ -69,12 +69,11 @@ def blurrinesDetection(img):
     Focus_Level = variance_of_laplacian(img)
     if Focus_Level < THRESHOLD:
         Focus_Status = "Blurry"
-
         return Focus_Status , round(Focus_Level,2), True
     else:
         return Focus_Status , round(Focus_Level,2), False
 
-    return Focus_Status , round(Focus_Level,2)
+
 
 
 def laplaceEdgeVariance(path):
@@ -189,8 +188,6 @@ def generate_csv_data(data, i) -> str:
         for col in csv_columns:
             new_row.append(str(data[col]))
         return new_row
-        return LH_dist, LH_percent , count, False
-
 
 def normalize_json(data: dict) -> dict:
   
