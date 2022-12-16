@@ -3,7 +3,7 @@ import cv2
 import pandas as pd
 import os 
 import math
-# from cv2 import IMREAD_COLOR,IMREAD_UNCHANGED
+from cv2 import IMREAD_COLOR,IMREAD_UNCHANGED
 
 
 # useful packeges
@@ -24,7 +24,7 @@ from skimage.transform import resize
 
 
 THRESHOLD = 500
-BIGHTNESS_LEVEL_LOW = 75
+BIGHTNESS_LEVEL_LOW = 85
 BIGHTNESS_LEVEL_HIGH = 170
 
 
@@ -57,12 +57,17 @@ def variance_of_laplacian(img2):
     gray = cv2.cvtColor(img2, cv2.COLOR_RGB2BGR)
     return cv2.Laplacian(gray, cv2.CV_64F).var()
 
-def BGR2RGB(BGR_img):
-    # turning BGR pixel color to RGB
-    rgb_image = cv2.cvtColor(BGR_img, cv2.COLOR_BGR2RGB)
-    return rgb_image
+# def BGR2RGB(BGR_img):
+#     # turning BGR pixel color to RGB
+#     rgb_image = cv2.cvtColor(BGR_img, cv2.COLOR_BGR2RGB)
+#     return rgb_image
 
 def blurrinesDetection(img):
+
+    #check if valid image
+    if not isinstance(img, np.ndarray):
+        return 'Invalid image', 0, False
+
     img = cv2.resize(img, (400, 320)) 
     Focus_Status = "Sharp"
 
@@ -76,19 +81,19 @@ def blurrinesDetection(img):
 
 
 
-def laplaceEdgeVariance(path):
-    # Load image
-    img = cv2.imread(path)
+# def laplaceEdgeVariance(path):
+#     # Load image
+#     img = cv2.imread(path)
 
-    # Resize image
-    img = resize(img, (400, 600))
+#     # Resize image
+#     img = resize(img, (400, 600))
     
-    # Gray-Scale change
-    img = rgb2gray(img)
+#     # Gray-Scale change
+#     img = rgb2gray(img)
 
-    # Edge detection
-    edge_laplace = laplace(img, ksize=5)
-    return [variance(edge_laplace),np.amax(edge_laplace)]
+#     # Edge detection
+#     edge_laplace = laplace(img, ksize=5)
+#     return [variance(edge_laplace),np.amax(edge_laplace)]
 
 def HeadPercent(img, cropH, cropW):
     height, width, channels = img.shape 
@@ -110,7 +115,7 @@ def HeadPercent(img, cropH, cropW):
 def faceDetect(img, index):
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     # Load the cascade
-    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('RnD/Face Quality/haarcascade_frontalface_default.xml')
     # Detect faces
     faces = face_cascade.detectMultiScale(gray, 1.1,  5 )
     
@@ -147,6 +152,8 @@ def faceDetect(img, index):
         LH_dist, LH_percent =  HeadPercent(img, w1, h1)
         return LH_dist, LH_percent , count, False
 
+
+# ********** FORMATTING ****************
 
 def normalize_json(data: dict) -> dict:
   

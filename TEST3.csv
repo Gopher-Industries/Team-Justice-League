@@ -1,0 +1,15 @@
+Image Path,Brightness,Focus,Face,PASS
+Test1..png,"{'Status': 'Good', 'Level': 133.28}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'Good', 'Distance': 26.44, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",
+Test2..png,"{'Status': 'Good', 'Level': 118.22}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'face too far', 'Distance': 12.92, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+Test3..png,"{'Status': 'Good', 'Level': 129.1}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'Good', 'Distance': 48.47, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+Test4..png,"{'Status': 'Good', 'Level': 151.05}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'Good', 'Distance': 26.23, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+Test5..png,"{'Status': 'Dark', 'Level': 55.5}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'Good', 'Distance': 23.2, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Brightness
+Test6..png,"{'Status': 'Dark', 'Level': 79.52}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'Good', 'Distance': 24.66, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Brightness
+Test7..png,"{'Status': 'Good', 'Level': 120.62}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'Good', 'Distance': 20.74, 'Count': 3, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Brightness
+Test8..png,"{'Status': 'Good', 'Level': 104.72}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'Good', 'Distance': 26.28, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Brightness
+Test9..png,"{'Status': 'Good', 'Level': 131.49}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'face too far', 'Distance': 16.92, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+Test10..png,"{'Status': 'Good', 'Level': 131.82}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'face too far', 'Distance': 10.83, 'Count': 2, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+Test11..png,"{'Status': 'Good', 'Level': 143.37}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'Good', 'Distance': 23.23, 'Count': 2, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+Test12..png,"{'Status': 'Good', 'Level': 121.49}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'face too far', 'Distance': 6.64, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+Test13..png,"{'Status': 'Good', 'Level': 130.02}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'face too far', 'Distance': 6.02, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+Test14..png,"{'Status': 'Dark', 'Level': 68.27}","{'Status': 'Invalid image', 'Level': 0}","{'Status': 'Good', 'Distance': 26.78, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Brightness
