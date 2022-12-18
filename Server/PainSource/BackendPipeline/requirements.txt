@@ -11,3 +11,4 @@ torchvision==0.13.1+cu113
 torchaudio==0.12.1 
 Flask==2.2.2
 gunicorn==20.1.0
+facenet-pytorch==2.5.2

@@ -7,6 +7,7 @@ import numpy as np
 #from pain_detector import PainDetector
 from PainAssessment.PainAssessmentCNN.pain_detector import PainDetector
 from PainAssessment.PainAssessmentVGG.assess_pain import initialize_model, do_pain_assessment
+from FaceRecognition import face_detection, face_recognition
 import requests
 from werkzeug.utils import secure_filename
 import imghdr
@@ -16,12 +17,16 @@ app = Flask(__name__)
 model_1 = None
 model_2 = None
 model_3 = None
+
 def init_app():
-    _model2_path = 'PainDetector/PainAssessmentCNN/checkpoints/50342566/50343918_3/model_epoch4.pt'
+    _model2_path = 'PainAssessment/PainAssessmentCNN/checkpoints/50342566/50343918_3/model_epoch4.pt'
     model_2 = PainDetector(image_size=160, checkpoint_path=_model2_path, num_outputs=40)
 
-    _model3_path = 'PainDetector/PainAssessmentCNN/checkpoints/50342566/50343918_3/model_epoch4.pt'
+    _model3_path = 'PainAssessment/PainAssessmentVGG/models/2.pth'
     model_3, input_size = initialize_model(_model3_path)
+
+    face_detection.init_face_detection()
+    face_recognition.init_face_recognition()
 
 @app.route('/test',methods=['GET, POST'])
 def dummy():
@@ -48,10 +53,11 @@ def GetPainRate():
         #Do Quality Check
 
         #Do Face Detection
-        face_image = detect_face()
+        face_image = face_detection.detect_face(img)
         #Fetch Base Image
         #get base image from DB, face recognition module
-        base_image = get_base_image()
+        face_id = face_recognition.search_face_id(face_image)
+        base_image = face_recognition.get_base_image(face_id)
 
 
         #if all passed, then do pain assessment

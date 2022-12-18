@@ -24,7 +24,7 @@ class PainDetector:
         self.FAN = FAN.FaceAlignment(FAN.LandmarksType._2D, flip_input=True, device=self.device,
                                      check_point_path=fan_checkpoint)
         self.face_detector = self.FAN.get_landmarks_from_image
-        self.mean_lmks = np.load('standard_face_68.npy')
+        self.mean_lmks = np.load('PainAssessment/PainAssessmentCNN/standard_face_68.npy')
         self.mean_lmks = self.mean_lmks * 155 / self.mean_lmks.max()
         self.mean_lmks[:, 1] += 15
         # load model model

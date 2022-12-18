@@ -35,7 +35,6 @@ def init_face_recognition():
     global resnet, workers, faces_in_memory
     workers = 0 if os.name == 'nt' else 4
     resnet = InceptionResnetV1(pretrained='vggface2').eval()
-    json_path = 
     with open(json_path + '/faces.json') as json_file:
         faces_in_memory = json.loads(json_file)
 
