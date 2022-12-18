@@ -72,9 +72,18 @@ def get_model_result(model, image):
   pspi = (outputs.data.cpu().numpy()[0][0])
   return pspi
 
-model_ft = None
-def do_pain_assessment(model_path, face_image):
-  global model_ft
+def do_pain_assessment(model_ft, face_image):
+  pspi = get_model_result(model_ft, face_image)    
+  return pspi
+
+###test this script
+def main():
+  import cv2
+  model_ft = None
+  model_path = "models/2.pth"
+  test_image_path = ("./example-target-frame.png")
+  face_image = cv2.imread(test_image_path)
+
   model_name = "vgg"
   num_classes = 10
   feature_extract = False
@@ -85,18 +94,10 @@ def do_pain_assessment(model_path, face_image):
     model_ft, input_size = initialize_model(model_path, model_name, num_classes, feature_extract, use_pretrained=True)
   else:
     print("Using preloaded model")
-  pspi = get_model_result(model_ft, face_image)    
-  return pspi
 
-###test this script
-def main():
-  import cv2
-  model_path = "models/2.pth"
-  test_image_path = ("./example-target-frame.png")
-  face_image = cv2.imread(test_image_path)
-  pspi = do_pain_assessment(model_path, face_image)
+  pspi = do_pain_assessment(model_ft, face_image)
   print(pspi)
-  pspi = do_pain_assessment(model_path, face_image)
+  pspi = do_pain_assessment(model_ft, face_image)
   print(pspi)
 
 if __name__=="__main__":
