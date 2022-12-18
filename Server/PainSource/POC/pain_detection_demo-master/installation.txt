@@ -1,3 +1,4 @@
+###To create local test environment
 conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.2 -c pytorch #if cuda present
 conda install pytorch==1.6.0 torchvision==0.7.0 cpuonly -c pytorch #if no GPU
 conda install -c anaconda scikit-image 
