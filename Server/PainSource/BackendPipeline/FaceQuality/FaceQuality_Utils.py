@@ -112,10 +112,12 @@ def HeadPercent(img, cropH, cropW):
 
 
 
-def faceDetect(img, index):
+#def faceDetect(img, index):
+def faceDetect(img):
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     # Load the cascade
-    face_cascade = cv2.CascadeClassifier('RnD/Face Quality/haarcascade_frontalface_default.xml')
+    #TODO: Do not really need this, as mediapipe has better face detector already, or use MTCNN face detector used in face rec block
+    face_cascade = cv2.CascadeClassifier('FaceQuality/haarcascade_frontalface_default.xml')
     # Detect faces
     faces = face_cascade.detectMultiScale(gray, 1.1,  5 )
     
