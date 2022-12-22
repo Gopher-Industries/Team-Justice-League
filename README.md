@@ -84,7 +84,7 @@ python app.py &
 ```
 On a successful startup, you should see following screen:
 
-<p><img src="Extras/Images/TestScreen.JPG" /></p>
+<p><img src="Extras/Images/FlaskScreen.JPG" /></p>
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
@@ -95,7 +95,7 @@ http://127.0.0.1:5000/test
 ```
 You should recieve a test JSON respose from the server:
 
-<p><img src="Extras/Images/TestScreen.JPG" /></p>
+<p><img src="Extras/Images/TestScreen-1.JPG" /></p>
 
 ### Running webtest
 
@@ -148,8 +148,8 @@ If Android application is successfully set up and REST call is executed then thi
 
 - [@prateek_singh](https://github.com/PS662) - System design, backend development, pain assessment model development and integration.
 - [@nadav_fedida](https://github.com/nadavfedida) - Research and Development of Image Quality block.
-- [@karl_birti] - Face Recognition model development.
-- [@kirsten](https://github.com/kclegaspi) - System design, backend development, pain assessment model development and integration.
+- [@karl_birti]()- Face Recognition model development.
+- [@kirsten](https://github.com/kclegaspi) - UI/UX and App Dev.
 
 See also the list of [contributors](https://github.com/Gopher-Industries/Team-Justice-League/graphs/contributors) who participated in this project.
 
