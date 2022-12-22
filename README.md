@@ -144,7 +144,7 @@ If Android application is successfully set up and REST call is executed then thi
 - [Scikit-Learn](https://scikit-learn.org/) - Framework for ML algorithms
 - [FLASK](https://flask.palletsprojects.com/en/2.2.x/) - Server Framework 
 - [Anaconda](https://www.anaconda.com/) - Python Environment
-- [Kotlin] (https://kotlinlang.org/) - Application development
+- [Kotlin](https://kotlinlang.org/) - Application development
 
 ## ✍️ Authors <a name = "authors"></a>
 
