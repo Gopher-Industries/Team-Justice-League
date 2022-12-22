@@ -115,7 +115,7 @@ If the test image passess the quality block, then face recognition fetches the b
 <p><img src="Extras/Images/WebTestScreen2.JPG" /></p>
 
 [To test T2-2022 pipeline] 
-Navidate to:
+Navigate to:
 
 ```
 http://127.0.0.1:5000/
@@ -134,6 +134,8 @@ The handover document of T2-2022 and T3-2022 has relevant information about the 
 ## Android Usage <a name="usage"></a>
 
 If Android application is successfully set up and REST call is executed then this result page pops up
+
+<p><img src="Extras/Images/AndroidResult1.jpg" /></p>
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
