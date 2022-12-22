@@ -3,20 +3,19 @@
  <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Project Title</h3>
+<h3 align="center">PainRate - Monitoring pain or discomfort in non
+verbal patients</h3>
 
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Gopher-Industries/Team-Justice-League/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Gopher-Industries/Team-Justice-League/pulls)
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> PainRate application is intended to be used by healthcare professionals and caregivers inside healthcare and aged care settings to monitor for any patient discomfort, empowering carers to deliver better care and pain management solutions for vulnerable populations (non verbal patients).
     <br> 
 </p>
 
@@ -28,47 +27,69 @@
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+When a patient is unable to self-report their pain, there is a much greater chance that they will be given the incorrect diagnosis. This can result in the use of inappropriate, ineffective, or insufficient treatment and management tactics, all of which can lead to poor patient outcomes ranging from discomfort to greater risk of infection, circulatory disorders, compromised immune system, or even death. To resolve this issue, our product will provide health care professionals with a mobile application which can perform reliable and accurate patient pain assessments using machine learning and computer vision.
+
+The key deliverables of this product are:
+• A simple, user-friendly application which can utilise the built-in camera on a smart phone to record the face/body language of a patient.
+• This visual data will be passed to a cloud-based assessment engine which can analyse the data using a computer vision model to evaluate a patient’s level of discomfort.
+• If the output of the model is higher than a specific threshold the application will send an alert to the carer/medical practitioner.
+• A dashboard inside the application will provide an overview to visually track recent assessments and the patient’s condition over time.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
+```
+git clone https://github.com/Gopher-Industries/Team-Justice-League
+```
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+The project requires Android studio for application to run.
 
-```
-Give examples
-```
+For backend service, follow steps in the next section to get started.
+
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
+The backend module contains the service for predicting Pain intensity, hosted on GCP (can run on any FLASK server).
 
-Say what the step will be
+For pipeline (T3-2022) with all the models, face recognition and face quality block:
+```
+cd Team-Justice-League/Server/PainSource/BackendPipeline
+conda create -n <env-name> python=3.8
+conda activate <env-name>
+python app.py
+```
+
+For pipeline (T2-2022) with model from https://github.com/TaatiTeam/pain_detection_demo wrapped in a FLASK application:
 
 ```
-Give the example
+cd Team-Justice-League/Server/PainSource/PainAssessmentSource/
+conda create -n <env-name> python=3.8
+conda activate <env-name>
+python app.py
 ```
-
-And repeat
+The server will exit once you exit your instance shell/Server, to run in background use <nohup> or simply do:
 
 ```
-until finished
+python app.py &
 ```
 
 End with an example of getting some data out of the system or using it for a little demo.
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
-Explain how to run the automated tests for this system.
+To test your server copy your GCP instance public IP
+
+```
+http://<GCP-IP>:5000/test
+```
 
 ### Break down into end to end tests
 
@@ -96,19 +117,21 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [OpenCV](https://opencv.org/) - Framework for Image I/O
+- [PyTorch](https://pytorch.org/) - Framework for DL algorithms
+- [Scikit-Learn]](https://scikit-learn.org/) - Framework for ML algorithms
+- [FLASK](https://flask.palletsprojects.com/en/2.2.x/) - Server Framework 
+- [Anaconda](https://www.anaconda.com/) - Python Environment
+- [Kotlin] (https://kotlinlang.org/) - Application development
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [@prateek_singh](https://github.com/PS662) - System design, backend development, pain assessment model development and integration
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Gopher-Industries/Team-Justice-League/graphs/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+https://github.com/TaatiTeam/pain_detection_demo
+
+https://github.com/xiaojngxu/ExtendedMTL4Pain
