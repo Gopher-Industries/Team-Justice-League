@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img width=200px height=200px src="https://avatars.githubusercontent.com/u/100745757?s=200&v=4" alt="Project logo"></a>
 </p>
 
 <h3 align="center">PainRate - Monitoring pain or discomfort in non
@@ -9,7 +9,7 @@ verbal patients</h3>
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Gopher-Industries/Team-Justice-League/issues)
+[![GitHub Issues](https://github.com/Gopher-Industries/Team-Justice-League/issues?q=is%3Aopen+is%3Aissue)](https://github.com/Gopher-Industries/Team-Justice-League/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Gopher-Industries/Team-Justice-League/pulls)
 </div>
 
@@ -90,6 +90,9 @@ To test your server copy your GCP instance public IP
 ```
 http://<GCP-IP>:5000/test
 ```
+You should recieve a test JSON respose from the server:
+
+<p><img src="Extras/Images/testscreen.JPG" /></p>
 
 ### Break down into end to end tests
 
@@ -135,3 +138,13 @@ See also the list of [contributors](https://github.com/Gopher-Industries/Team-Ju
 https://github.com/TaatiTeam/pain_detection_demo
 
 https://github.com/xiaojngxu/ExtendedMTL4Pain
+
+- References
+
+[1]	S. Rezaei, A. Moturu, S. Zhao, K. M. Prkachin, T. Hadjistavropoulos, and B. Taati, “Unobtrusive pain monitoring in older adults with dementia using pairwise and contrastive training,” IEEE J. Biomed. Health Inform., vol. 25, no. 5, pp. 1450–1462, 2021.
+
+[2] Xu, X., Huang, J. S., & De Sa, V. R. (2020). pain evaluation in video using extended multitask learning from multidimensional measurements. In A. V. Dalca, M. B. A. McDermott, E. Alsentzer, S. G. Finlayson, M. Oberst, F. Falck, & B. Beaulieu-Jones (Eds.), Proceedings of the Machine Learning for Health NeurIPS Workshop (Vol. 116, pp. 141–154). PMLR.
+
+
+
+
