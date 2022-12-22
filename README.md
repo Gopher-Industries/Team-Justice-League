@@ -9,7 +9,7 @@ verbal patients</h3>
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://github.com/Gopher-Industries/Team-Justice-League/issues?q=is%3Aopen+is%3Aissue)](https://github.com/Gopher-Industries/Team-Justice-League/issues)
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Gopher-Industries/Team-Justice-League/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Gopher-Industries/Team-Justice-League/pulls)
 </div>
 
@@ -24,7 +24,7 @@ verbal patients</h3>
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
-- [Usage](#usage)
+- [Android Usage](#usage)
 - [Built Using](#built_using)
 - [TODO](../TODO.md)
 - [Authors](#authors)
@@ -64,6 +64,7 @@ For pipeline (T3-2022) with all the models, face recognition and face quality bl
 cd Team-Justice-League/Server/PainSource/BackendPipeline
 conda create -n <env-name> python=3.8
 conda activate <env-name>
+pip install -r requirements.txt
 python app.py
 ```
 
@@ -73,6 +74,7 @@ For pipeline (T2-2022) with model from https://github.com/TaatiTeam/pain_detecti
 cd Team-Justice-League/Server/PainSource/PainAssessmentSource/
 conda create -n <env-name> python=3.8
 conda activate <env-name>
+pip install -r requirements.txt
 python app.py
 ```
 The server will exit once you exit your instance shell/Server, to run in background use <nohup> or simply do:
@@ -80,60 +82,80 @@ The server will exit once you exit your instance shell/Server, to run in backgro
 ```
 python app.py &
 ```
+On a successful startup, you should see following screen:
 
-End with an example of getting some data out of the system or using it for a little demo.
+<p><img src="Extras/Images/TestScreen.JPG" /></p>
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
-To test your server copy your GCP instance public IP
+To test your server copy your GCP instance public IP or if running on local server then:
 
 ```
-http://<GCP-IP>:5000/test
+http://127.0.0.1:5000/test
 ```
 You should recieve a test JSON respose from the server:
 
-<p><img src="Extras/Images/testscreen.JPG" /></p>
+<p><img src="Extras/Images/TestScreen.JPG" /></p>
 
-### Break down into end to end tests
+### Running webtest
 
-Explain what these tests test and why
+To test end to end pipeline (T3-2022), there is a simple webapp
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
 
 ```
-Give an example
+http://127.0.0.1:5000/webtest
 ```
 
-## 🎈 Usage <a name="usage"></a>
+Upload a test image
 
-Add notes about how to use the system.
+<p><img src="Extras/Images/WebTestScreen1.JPG" /></p>
+
+If the test image passess the quality block, then face recognition fetches the base image (if present) and calculates the pain rating
+
+<p><img src="Extras/Images/WebTestScreen2.JPG" /></p>
+
+[To test T2-2022 pipeline] 
+Navidate to:
+
+```
+http://127.0.0.1:5000/
+```
+### Local test
+
+Web app is a simple UI to test end to end flow, for all other testing purposes, local_tester.py should be used.
+
+<p><img src="Extras/Images/LocalTestScreen.JPG" /></p>
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
-Add additional notes about how to deploy this on a live system.
+For a step by step deployment and android walkthrough, please go through the User Manual section in the handover document.
+The handover document of T2-2022 and T3-2022 has relevant information about the feature research as well as the steps to login to your GCP account and using Android studio.
+
+## Android Usage <a name="usage"></a>
+
+If Android application is successfully set up and REST call is executed then this result page pops up
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [OpenCV](https://opencv.org/) - Framework for Image I/O
 - [PyTorch](https://pytorch.org/) - Framework for DL algorithms
-- [Scikit-Learn]](https://scikit-learn.org/) - Framework for ML algorithms
+- [Scikit-Learn](https://scikit-learn.org/) - Framework for ML algorithms
 - [FLASK](https://flask.palletsprojects.com/en/2.2.x/) - Server Framework 
 - [Anaconda](https://www.anaconda.com/) - Python Environment
 - [Kotlin] (https://kotlinlang.org/) - Application development
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@prateek_singh](https://github.com/PS662) - System design, backend development, pain assessment model development and integration
+- [@prateek_singh](https://github.com/PS662) - System design, backend development, pain assessment model development and integration.
+- [@nadav_fedida](https://github.com/nadavfedida) - Research and Development of Image Quality block.
+- [@karl_birti] - Face Recognition model development.
+- [@kirsten](https://github.com/kclegaspi) - System design, backend development, pain assessment model development and integration.
 
 See also the list of [contributors](https://github.com/Gopher-Industries/Team-Justice-League/graphs/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- Pain assessment source
 
 https://github.com/TaatiTeam/pain_detection_demo
 
@@ -144,7 +166,3 @@ https://github.com/xiaojngxu/ExtendedMTL4Pain
 [1]	S. Rezaei, A. Moturu, S. Zhao, K. M. Prkachin, T. Hadjistavropoulos, and B. Taati, “Unobtrusive pain monitoring in older adults with dementia using pairwise and contrastive training,” IEEE J. Biomed. Health Inform., vol. 25, no. 5, pp. 1450–1462, 2021.
 
 [2] Xu, X., Huang, J. S., & De Sa, V. R. (2020). pain evaluation in video using extended multitask learning from multidimensional measurements. In A. V. Dalca, M. B. A. McDermott, E. Alsentzer, S. G. Finlayson, M. Oberst, F. Falck, & B. Beaulieu-Jones (Eds.), Proceedings of the Machine Learning for Health NeurIPS Workshop (Vol. 116, pp. 141–154). PMLR.
-
-
-
-
