@@ -77,7 +77,7 @@ conda activate <env-name>
 pip install -r requirements.txt
 python app.py
 ```
-The server will exit once you exit your instance shell/Server, to run in background use <nohup> or simply do:
+The server will exit once you exit your instance shell/Server, to run in background use nohup or simply do:
 
 ```
 python app.py &
@@ -86,6 +86,11 @@ On a successful startup, you should see following screen:
 
 <p><img src="Extras/Images/FlaskScreen.JPG" /></p>
 
+The application assumes that there are some faces in the JSON file for mathcing base image, if running in a fresh environment or if you want to add more faces to the JSON, run:
+
+```
+python enrolFaces.py
+```
 ## 🔧 Running the tests <a name = "tests"></a>
 
 To test your server copy your GCP instance public IP or if running on local server then:
