@@ -20,6 +20,7 @@ workers = 1
 faces_in_memory = []
 json_path = "FaceRecognition/" #Offline for base images, UI should have an option to enrol faces
 images_path = "FaceRecognition/SampleBaseImages/"
+threshold = 0.45
 
 ##Only for enrol faces, remove once DB is set up
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
@@ -58,9 +59,15 @@ def search_face_id(query_face_image):
         _id = face['id']
         _embedding = face['embedding']
         #Storing all distances incase we need to access top N results
-        print(len(_embedding), len((query_embedding)))
+        #print(len(_embedding), len((query_embedding)))
         _dist.append(compute_face_distance(query_embedding[0], _embedding))     
     face_index = _dist.index(min(_dist))
+
+    if (_dist[face_index] > threshold):
+        print("Low Face Rec conf: ", _dist[face_index])
+        face_id = "NA"
+        return face_id
+    print("Face Rec conf: ", _dist[face_index])
     face_id = faces_in_memory[face_index]['id']
     return face_id
 

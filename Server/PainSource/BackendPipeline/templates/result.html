@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Pain Result</title>
+    </head>
+    <body>
+        <h1>Pain Result</h1>
+        <p>{{ output }}</p>
+        </form>
+        <hr>
+        <h2>Reference Image</h2>
+        <img src="{{ url_for('upload', filename=files_ref) }}" style="width: 64px">
+        <h2>Target Image</h2>
+        {% for file in files_target %}
+        <img src="{{ url_for('upload_target', filename=file) }}" style="width: 64px">
+        {% endfor %}
+    </body>
+
+</html>

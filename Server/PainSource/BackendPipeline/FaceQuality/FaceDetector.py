@@ -36,7 +36,7 @@ class FaceDetector():
 
         
     
-    def findNose(self, image, index):
+    def findNose(self, image, index=0):
         with self.face_detection.FaceDetection(model_selection=0, min_detection_confidence=0.5) as face_detection:
             self.FaceResults = face_detection.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB)) 
             # NoseLocation = image.copy()

@@ -92,7 +92,8 @@ class ImageQuality():
                 FaceMesh =  detector.findFaceMesh(image)   
                 
                 #find nose Location on image            
-                scroe, Xloc, Yloc = detector.findNose(image, i)          
+                #scroe, Xloc, Yloc = detector.findNose(image, i)          
+                scroe, Xloc, Yloc = detector.findNose(image)
             
                 ### ENABLE BELOW TO SAVE IMAGE WITH FACEMESH + NOSE CROSS     
                 #cv2.imwrite('FaceMesh{}.jpg'.format(i+1), FaceMesh)

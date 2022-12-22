@@ -23,7 +23,7 @@ from skimage.transform import resize
     
 
 
-THRESHOLD = 500
+THRESHOLD = 65
 BIGHTNESS_LEVEL_LOW = 85
 BIGHTNESS_LEVEL_HIGH = 170
 
@@ -112,8 +112,7 @@ def HeadPercent(img, cropH, cropW):
 
 
 
-#def faceDetect(img, index):
-def faceDetect(img):
+def faceDetect(img, index=0):
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     # Load the cascade
     #TODO: Do not really need this, as mediapipe has better face detector already, or use MTCNN face detector used in face rec block

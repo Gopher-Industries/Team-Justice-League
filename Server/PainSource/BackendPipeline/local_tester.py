@@ -17,7 +17,8 @@ def post_encoded_image(url, headers, imgPath):
     print (json.loads(r.text))
 
 
-url = "http://35.192.61.90"
+url = "http://34.122.2.194"
+#url = "http://127.0.0.1"
 port = "5000"
 endpoint = "/getPainRate"
 #register_endpoint = "/sendBaseImage"
@@ -50,4 +51,3 @@ def UT_CheckAPI():
         print("An exception occurred")
         utFlag = False
     return utFlag
-    

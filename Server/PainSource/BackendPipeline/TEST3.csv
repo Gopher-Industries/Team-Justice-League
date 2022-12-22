@@ -1,2 +1,2 @@
 Image Path,Brightness,Focus,Face,PASS
-,"{'Status': 'Good', 'Level': 128.52}","{'Status': 'Blurry', 'Level': 69.69}","{'Status': 'Good', 'Distance': 32.1, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Focus
+,"{'Status': 'Good', 'Level': 128.21}","{'Status': 'Sharp', 'Level': 485.88}","{'Status': 'Good', 'Distance': 30.48, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",PASS
