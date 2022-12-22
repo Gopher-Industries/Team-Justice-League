@@ -9,8 +9,8 @@ verbal patients</h3>
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Gopher-Industries/Team-Justice-League/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Gopher-Industries/Team-Justice-League/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues-raw/Gopher-Industries/Team-Justice-League)](https://github.com/Gopher-Industries/Team-Justice-League/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Gopher-Industries/Team-Justice-League)](https://github.com/Gopher-Industries/Team-Justice-League/pulls)
 </div>
 
 ---
