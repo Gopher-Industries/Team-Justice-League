@@ -1,2 +1,0 @@
-Image Path,Brightness,Focus,Face,PASS
-Test18.png,"{'Status': 'Good', 'Level': 123.39}","{'Status': 'Sharp', 'Level': 766.67}","{'Status': 'Good', 'Distance': 25.33, 'Count': 3, 'Confidence': 74.63, 'Nose': {'X_loc': 1374, 'Y_loc': 949}}",PASS

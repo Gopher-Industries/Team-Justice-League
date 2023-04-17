@@ -36,14 +36,14 @@ class FaceDetector():
 
         
     
-    def findNose(self, image, index):
+    def findNose(self, image):
         with self.face_detection.FaceDetection(model_selection=0, min_detection_confidence=0.5) as face_detection:
             self.FaceResults = face_detection.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB)) 
             # NoseLocation = image.copy()
 
             if self.FaceResults.detections:
                 for detection in self.FaceResults.detections:
-                    print(f'Nose tip Face{index+1} :')
+                    print(f'Nose tip Face :')
 
                     score = round(detection.score[0]*100,2)
                     print(f'face score: {score}%')
