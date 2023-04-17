@@ -101,9 +101,9 @@ def HeadPercent(img, cropH, cropW):
     cropped = cropH*cropW
     percent = round(cropped/overall*100,2)
 
-    if percent < 20:
+    if percent < 10:
         return 'face too far', percent
-    elif percent > 50:
+    elif percent > 70:
         return 'face too close', percent
     else:
         return 'Good', percent
@@ -112,10 +112,11 @@ def HeadPercent(img, cropH, cropW):
 
 
 
-def faceDetect(img, index):
+def faceDetect(img):
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     # Load the cascade
-    face_cascade = cv2.CascadeClassifier('RnD/Face Quality/haarcascade_frontalface_default.xml')
+
+    face_cascade = cv2.CascadeClassifier('/Users/nadav/Desktop/Uni/2023_tri_1/TeamB/Github/Team-Justice-League/RnD/Face Quality/haarcascade_frontalface_default.xml')
     # Detect faces
     faces = face_cascade.detectMultiScale(gray, 1.1,  5 )
     
@@ -134,7 +135,8 @@ def faceDetect(img, index):
         #       Write out image to directory (only save face im image)
         #  **** Send image here to serve  ****
         if dist_status == 'Good':
-            # cv2.imwrite('{}.jpg'.format(index+1), faces)        # To print faces
+            # cv2.imwrite('{}.jpg'.format(index+1), faces)        
+            # # To print faces
             return dist_status, percent , 1, False
         else:
             return dist_status, percent , 1, True
@@ -147,7 +149,8 @@ def faceDetect(img, index):
             if  a[1] > largest[0]:
                 largest = [a[1], i]
 
-        # cv2.imwrite('{}largest.jpg'.format(index+1), faces[largest[1]])        # To print faces
+        # cv2.imwrite('{}largest.jpg'.format(index+1), faces[largest[1]])        
+        # # To print faces
         x1, y1, w1, h1 = faces[largest[1]]
         LH_dist, LH_percent =  HeadPercent(img, w1, h1)
         return LH_dist, LH_percent , count, False

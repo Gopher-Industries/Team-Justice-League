@@ -80,3 +80,9 @@ Added Where each test fails to the PASS/FAIL column. This will indicate to us an
 
 ## Unit testing V1.0
 <img width="689" alt="Unit testing_V1" src="https://user-images.githubusercontent.com/62866537/206883860-326bea33-b5b9-4cd6-8917-b88ce78184f7.png">
+
+
+
+##### NOTE V2.0
+Added webcam integration to allow for ease of testing while application is not working. 
+This will allow us to test with images taken from webcam and send to check for pain assessment.
