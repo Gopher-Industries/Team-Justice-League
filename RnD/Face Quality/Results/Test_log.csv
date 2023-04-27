@@ -1,0 +1,8 @@
+Image Path,Brightness,Focus,Face,PASS
+opencv_frame_2023-04-17_17-12-56.png.jpg,"{'Status': 'Good', 'Level': 112.47}","{'Status': 'Sharp', 'Level': 821.31}","{'Status': 'face too far', 'Distance': 6.85, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+opencv_frame_2023-04-17_17-17-52.png.jpg,"{'Status': 'Good', 'Level': 105.83}","{'Status': 'Sharp', 'Level': 886.9}","{'Status': 'face too far', 'Distance': 6.71, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+opencv_frame_2023-04-17_17-20-19.png.jpg,"{'Status': 'Good', 'Level': 108.68}","{'Status': 'Sharp', 'Level': 710.44}","{'Status': 'face too far', 'Distance': 7.11, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+opencv_frame_2023-04-17_17-23-26.png.jpg,"{'Status': 'Good', 'Level': 115.01}","{'Status': 'Sharp', 'Level': 661.66}","{'Status': 'face too far', 'Distance': 9.34, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+opencv_frame_2023-04-17_17-24-58.png.jpg,"{'Status': 'Good', 'Level': 111.48}","{'Status': 'Sharp', 'Level': 620.74}","{'Status': 'face too far', 'Distance': 7.79, 'Count': 1, 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+opencv_frame_2023-04-17_17-25-04.png.jpg,"{'Status': 'Too Bright', 'Level': 242.58}","{'Status': 'Blurry', 'Level': 302.73}","{'Status': 'N/A', 'Distance': 'N/A', 'Count': 'N/A', 'Confidence': '', 'Nose': {'X_loc': '', 'Y_loc': ''}}",FAIL - Distance
+opencv_frame_2023-04-17_17-27-04.png.jpg,"{'Status': 'Good', 'Level': 108.81}","{'Status': 'Sharp', 'Level': 502.34}","{'Status': 'Good', 'Distance': 11.82, 'Count': 1, 'Confidence': 84.87, 'Nose': {'X_loc': 1103, 'Y_loc': 546}}",PASS
