@@ -9,7 +9,7 @@ import numpy as np
 import cv2
 import pandas as pd
 import csv
-import os
+import sys
 import json
 import pprint as pp
 import _uuid
@@ -51,70 +51,79 @@ class ImageQuality():
 
         path = 'RnD/Face Quality/Results/'
         #Export to CSV - Create file and write headers
-        with open(path + 'TEST3.csv', 'w+',newline='\n', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=RESULTS.keys())
-            writer.writeheader()
-            
-            fileName , image = Webcam.get_image()
-            cv2.imshow('temp',image)
-            #save image name
-            RESULTS['Image Path']= f'{fileName}.jpg'
 
-            #brightness test
-            BS ,BL, BrightnessFlag = BrightnessTest(image) 
-            RESULTS['Brightness']['Status']=BS
-            RESULTS['Brightness']['Level']= BL
-            if BrightnessFlag:
-                RESULTS['PASS']= 'FAIL - Brightness'
+        try:
+            with open(path + 'Test_log.csv', 'a',newline='\n', encoding='utf-8') as f:
+                writer = csv.DictWriter(f, fieldnames=RESULTS.keys())
+                # writer.writeheader()
 
-            #Focus test
-            FS, FL, FocusFlag = blurrinesDetection(image)
-            RESULTS['Focus']['Status']= FS
-            RESULTS['Focus']['Level']= FL
-            if FocusFlag:
-                RESULTS['PASS']= 'FAIL - Focus'
+                try:
+                    fileName , image = Webcam.get_image()
+                except Exception as e:
+                    print(e)
+                    sys.exit()
 
-            #Head count test
-            Dist_status , H_percent , count ,DistFlag = faceDetect(image)
-            RESULTS['Face']['Status'] = Dist_status
-            RESULTS['Face']['Distance'] = H_percent
-            RESULTS['Face']['Count']= count
+                cv2.imshow('temp',image) 
+                #save image name
+                RESULTS['Image Path']= f'{fileName}.jpg'
 
-            if DistFlag:
-                RESULTS['PASS']= 'FAIL - Distance'
-            #Overall quality check
-            if  BS == 'Good' and FS == 'Sharp' and Dist_status == 'Good':
+                #brightness test
+                BS ,BL, BrightnessFlag = BrightnessTest(image) 
+                RESULTS['Brightness']['Status']=BS
+                RESULTS['Brightness']['Level']= BL
+                if BrightnessFlag:
+                    RESULTS['PASS']= 'FAIL - Brightness'
+
+                #Focus test
+                FS, FL, FocusFlag = blurrinesDetection(image)
+                RESULTS['Focus']['Status']= FS
+                RESULTS['Focus']['Level']= FL
+                if FocusFlag:
+                    RESULTS['PASS']= 'FAIL - Focus'
+
+                #Head count test
+                Dist_status , H_percent , count ,DistFlag = faceDetect(image)
+                RESULTS['Face']['Status'] = Dist_status
+                RESULTS['Face']['Distance'] = H_percent
+                RESULTS['Face']['Count']= count
+
+                if DistFlag:
+                    RESULTS['PASS']= 'FAIL - Distance'
+                #Overall quality check
+                if  BS == 'Good' and FS == 'Sharp' and Dist_status == 'Good':
+                    
+                    #Find face mesh and nose position to determine if face is not close to centre
+                    #find face mesh
+                    FaceMesh =  detector.findFaceMesh(image)   
+                    
+                    #find nose Location on image            
+                    scroe, Xloc, Yloc = detector.findNose(image)          
                 
-                #Find face mesh and nose position to determine if face is not close to centre
-                #find face mesh
-                FaceMesh =  detector.findFaceMesh(image)   
+                    ### ENABLE BELOW TO SAVE IMAGE WITH FACEMESH + NOSE CROSS     
+                    cv2.imwrite(path + 'FaceMesh.jpg', FaceMesh)
+
+                    RESULTS['Face']['Confidence'] = scroe
+                    RESULTS['Face']['Nose']['X_loc'] = Xloc
+                    RESULTS['Face']['Nose']['Y_loc'] = Yloc
+                    RESULTS['PASS'] = 'PASS'
                 
-                #find nose Location on image            
-                scroe, Xloc, Yloc = detector.findNose(image)          
-            
-                ### ENABLE BELOW TO SAVE IMAGE WITH FACEMESH + NOSE CROSS     
-                cv2.imwrite(path + 'FaceMesh.jpg', FaceMesh)
-
-                RESULTS['Face']['Confidence'] = scroe
-                RESULTS['Face']['Nose']['X_loc'] = Xloc
-                RESULTS['Face']['Nose']['Y_loc'] = Yloc
-                RESULTS['PASS'] = 'PASS'
-            
-            else:
-                RESULTS['Face']['Confidence'] = ""
-                RESULTS['Face']['Nose']['X_loc'] = ""
-                RESULTS['Face']['Nose']['Y_loc'] = ""
-
-                # print(json.dumps(RESULTS, indent=4))
+                else:
+                    RESULTS['Face']['Confidence'] = ""
+                    RESULTS['Face']['Nose']['X_loc'] = ""
+                    RESULTS['Face']['Nose']['Y_loc'] = ""
                 
-            #prepare data to be sent as JSON
-            DataJson = json.dumps(RESULTS, indent= 4)
-            #*************  EXPORT DataJson  ******************** 
-        
-            # Export to CSV - ROW
-            # Setup.save_data(RESULTS)
-            writer.writerow(RESULTS) #***WORKS*** 
-
+                ### Uncomment if you want to see the JSON output in the terminal
+                #print(json.dumps(RESULTS, indent=4))
+                    
+                #prepare data to be sent as JSON
+                DataJson = json.dumps(RESULTS, indent= 4)
+                #*************  EXPORT DataJson  ******************** 
+            
+                # Export to CSV - ROW
+                # Setup.save_data(RESULTS)
+                writer.writerow(RESULTS) #***WORKS*** 
+        except Exception as e:
+            print(e)
     if __name__ == "__main__":
         main()
 

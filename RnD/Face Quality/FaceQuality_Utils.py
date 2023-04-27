@@ -123,7 +123,7 @@ def faceDetect(img):
     count = len(faces)
     # if no face found
     if count < 1:
-        return 'N/A' , 'N/A' , 'N/A'
+        raise Exception("no faces found")
 
         #if more than 1 face found, select the largest
     elif count == 1:
