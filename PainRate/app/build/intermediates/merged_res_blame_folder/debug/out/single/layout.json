@@ -1,14 +1,74 @@
 [
     {
-        "merged": "com.example.PainRate.app-mergeDebugResources-25:/layout/activity_main.xml",
-        "source": "com.example.PainRate.app-main-28:/layout/activity_main.xml"
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/row_keyboard.xml",
+        "source": "com.painrate.app-main-45:/layout/row_keyboard.xml"
     },
     {
-        "merged": "com.example.PainRate.app-mergeDebugResources-25:/layout/activity_scanning.xml",
-        "source": "com.example.PainRate.app-main-28:/layout/activity_scanning.xml"
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/row_main_page.xml",
+        "source": "com.painrate.app-main-45:/layout/row_main_page.xml"
     },
     {
-        "merged": "com.example.PainRate.app-mergeDebugResources-25:/layout/activity_results.xml",
-        "source": "com.example.PainRate.app-main-28:/layout/activity_results.xml"
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_menu.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_main_page.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_main_page.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_patients.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_patients.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_emergency.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_emergency.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_reset_password.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_reset_password.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_welcome_page.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_welcome_page.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_patient_view.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_patient_view.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_menu_setting.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_menu_setting.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_notification.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_notification.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_capture.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_capture.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/layout_progress_dialog.xml",
+        "source": "com.painrate.app-main-45:/layout/layout_progress_dialog.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_sign_up_page.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_sign_up_page.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_login_page.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_login_page.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_keyboard.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_keyboard.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_results.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_results.xml"
+    },
+    {
+        "merged": "com.painrate.app-mergeDebugResources-42:/layout/activity_chat_box.xml",
+        "source": "com.painrate.app-main-45:/layout/activity_chat_box.xml"
     }
 ]

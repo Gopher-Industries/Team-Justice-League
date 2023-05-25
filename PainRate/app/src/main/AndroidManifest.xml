@@ -1,50 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.PainRate">
+    package="com.painrate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.CAMERA" />-->
 
-    <queries>
-        <intent>
-            <action android:name="android.media.action.IMAGE_CAPTURE" />
-        </intent>
-    </queries>
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
-        android:allowBackup="true"
+        android:name="com.painrate.appcomponents.di.MyApp"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ScanningPage">
+        android:theme="@style/Theme.MyApp"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name="com.example.PainRate.Results"
-            android:exported="false" />
-
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.PainRate.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/fileprovider" />
-        </provider>
-
-        <activity
-            android:name="com.example.PainRate.Scanning"
+            android:name="com.painrate.modules.patients.ui.AddPatient"
             android:exported="false" />
         <activity
-            android:name="com.example.PainRate.MainActivity"
-            android:exported="true">
+            android:name="com.painrate.modules.patients.ui.PatientView"
+            android:exported="false" />
+        <activity
+            android:name="com.painrate.modules.resetpassword.ui.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.notification.ui.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.menusetting.ui.MenuSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.loginpage.ui.LoginPageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.mainpage.ui.MainPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.menu.ui.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.keyboard.ui.KeyboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.patients.ui.PatientsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.welcomepage.ui.WelcomePageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.painrate.modules.capture.ui.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.chatbox.ui.ChatBoxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.signuppage.ui.SignUpPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.painrate.modules.emergency.ui.EmergencyActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
     </application>
 
+
+
+
+
 </manifest>
+

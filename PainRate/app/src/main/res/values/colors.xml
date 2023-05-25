@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -7,7 +7,52 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <!-- Customize Color -->
-    <color name="orange_900">#FFF57F17</color>
+<color name="gray_51">#fff9f9</color>
+<color name="bluegray_50">#f0f1f3</color>
+<color name="gray_514">#a7a7a7</color>
+<color name="light_blue_600">#009dd9</color>
+<color name="indigo_A100">#92a3fd</color>
+<color name="gray_50">#f7f8f8</color>
+<color name="light_blue_800">#2086b2</color>
+<color name="black_903">#090909</color>
+<color name="black_900_66">#66000000</color>
+<color name="black_900">#000000</color>
+<color name="black_900_63">#63000000</color>
+<color name="black_902">#111010</color>
+<color name="black_901">#0a0a0a</color>
+<color name="gray_804">#403b3b</color>
+<color name="gray_903">#141313</color>
+<color name="gray_904">#151414</color>
+<color name="red_A701">#d90000</color>
+<color name="indigo_A100_4c">#4c95adfe</color>
+<color name="red_A700">#ff0000</color>
+<color name="teal_A700">#00d9a4</color>
+<color name="black_900_4c">#4c000000</color>
+<color name="gray_600">#75777a</color>
+<color name="gray_601">#817889</color>
+<color name="gray_502">#aaaaaa</color>
+<color name="gray_400">#c1b6b6</color>
+<color name="gray_500">#aca3a5</color>
+<color name="gray_401">#c4c4c4</color>
+<color name="gray_802">#4f4648</color>
+<color name="blue_601">#2689d1</color>
+<color name="gray_406">#b7b7b7</color>
+<color name="gray_803">#3f3a3a</color>
+<color name="bluegray_100_e5">#e5d1d5db</color>
+<color name="gray_800">#3c3a3a</color>
+<color name="blue_401">#389dd6</color>
+<color name="gray_602">#7b6f72</color>
+<color name="gray_801">#3d3b3b</color>
+<color name="gray_900">#1d1517</color>
+<color name="blue_600">#3b97cc</color>
+<color name="blue_402">#399af4</color>
+<color name="bluegray_100">#d9d9d9</color>
+<color name="teal_50">#dff3f0</color>
+<color name="indigo_300">#7b6cda</color>
+<color name="bluegray_900">#2e3133</color>
+<color name="bluegray_201">#b3b8c1</color>
+<color name="bluegray_200">#adb3bc</color>
+<color name="blue_400">#30a5e7</color>
+<color name="blue_200">#9dceff</color>
+<color name="white_A700">#ffffff</color>
 </resources>

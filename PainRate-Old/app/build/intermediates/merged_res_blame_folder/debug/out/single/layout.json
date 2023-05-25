@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-mergeDebugResources-25:\\layout\\activity_scanning.xml",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\layout\\activity_scanning.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-mergeDebugResources-25:\\layout\\activity_results.xml",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\layout\\activity_results.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-mergeDebugResources-25:\\layout\\activity_welcome2.xml",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\layout\\activity_welcome2.xml"
+    },
+    {
+        "merged": "com.example.PainRate.app-mergeDebugResources-25:/layout/activity_welcome2.xml",
+        "source": "com.example.PainRate.app-main-28:/layout/activity_welcome2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-mergeDebugResources-25:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\layout\\activity_main.xml"
+    }
+]

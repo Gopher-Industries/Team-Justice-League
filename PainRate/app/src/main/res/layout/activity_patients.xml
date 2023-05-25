@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="patientsVM" type="com.painrate.modules.patients.data.viewmodel.PatientsVM"/>
+    </data>
+    <FrameLayout android:id="@+id/framePatients"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+
+        <FrameLayout
+            android:id="@+id/frameBottombar"
+            style="@style/groupStylewhite_2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom|start">
+
+            <LinearLayout
+                android:id="@+id/linearRowgrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearDashboard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageGrid"
+                        android:layout_width="@dimen/_20pxh"
+                        android:layout_height="@dimen/_21pxh"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_grid"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_grid" />
+
+                    <TextView
+                        android:id="@+id/txtDashboard"
+                        style="@style/txtPoppinsmedium10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{patientsVM.patientsModel.txtDashboard}"
+                        tools:text="@string/lbl_dashboard" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearCapture"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageCamera"
+                        android:layout_width="@dimen/_23pxh"
+                        android:layout_height="@dimen/_21pxh"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_camera"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_camera" />
+
+                    <TextView
+                        android:id="@+id/txtCapture"
+                        style="@style/txtPoppinsmedium10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{patientsVM.patientsModel.txtCapture}"
+                        tools:text="@string/lbl_capture" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPatients"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageUser"
+                        android:layout_width="@dimen/_27pxh"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_user"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_user_light_blue_600" />
+
+                    <TextView
+                        android:id="@+id/txtPatients"
+                        style="@style/txtPoppinsmedium10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{patientsVM.patientsModel.txtPatients}"
+                        tools:text="@string/lbl_patients" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageNotification"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_notification_light_blue_600"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_notification" />
+
+                    <TextView
+                        android:id="@+id/txtNotificationOne"
+                        style="@style/txtPoppinsmedium10_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{patientsVM.patientsModel.txtNotificationOne}"
+                        tools:text="@string/lbl_notification" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageMenu"
+                        android:layout_width="@dimen/_20pxh"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_menu_bluegray_900"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_menu_bluegray_900" />
+
+                    <TextView
+                        android:id="@+id/txtMenuOne"
+                        style="@style/txtPoppinsmedium10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{patientsVM.patientsModel.txtMenuOne}"
+                        tools:text="@string/lbl_menu" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearTopBar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_1">
+                <ImageView android:id="@+id/imageLogobluetext"
+                    android:layout_height="@dimen/_33pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="@dimen/_134pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_logobluetext"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_logobluetext"/>
+                <ImageView android:id="@+id/imageCut"
+                    android:layout_height="@dimen/_29pxh"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:layout_marginEnd="@dimen/_38pxh"
+                    android:layout_marginStart="@dimen/_173pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="@dimen/_40pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_cut"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_cut"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView android:id="@+id/imageEllipseOne"
+            android:layout_gravity="top|center"
+            android:layout_height="@dimen/_60pxh"
+            android:layout_marginBottom="@dimen/_87pxv"
+            android:layout_marginEnd="@dimen/_178pxh"
+            android:layout_marginStart="@dimen/_178pxh"
+            android:layout_marginTop="@dimen/_87pxv"
+            android:layout_width="@dimen/_57pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_30pxh}"
+            imageRes="@{@drawable/img_ellipse1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtMrunknow"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_150pxv"
+            android:layout_marginEnd="@dimen/_162pxh"
+            android:layout_marginStart="@dimen/_162pxh"
+            android:layout_marginTop="@dimen/_150pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{patientsVM.patientsModel.txtMrunknow}"
+            style="@style/txtPoppinsregular15" tools:text="@string/lbl_mr_unknow"/>
+        <LinearLayout android:id="@+id/linearRowsearch"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_177pxv"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_177pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+            <ImageView android:id="@+id/imageSearch"
+                android:layout_height="@dimen/_23pxh"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="@dimen/_23pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_search_light_blue_600"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_search_light_blue_600"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSearchOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginEnd="@dimen/_302pxh"
+                android:layout_marginStart="@dimen/_6pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_weight="0.68" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{patientsVM.patientsModel.txtSearchOne}"
+                style="@style/txtPoppinsmedium14" tools:text="@string/lbl_search"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearColumnlanguageFour"
+            style="@style/groupStylebluegray_1"
+            android:layout_width="401dp"
+            android:layout_height="490dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginBottom="@dimen/_80pxv"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearRowpatientlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnpatientlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="444dp"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_weight="0.69"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPatientlist"
+                        style="@style/txtPoppinsbold14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_35pxh"
+                        android:layout_marginEnd="@dimen/_35pxh"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{patientsVM.patientsModel.txtPatientlist}"
+                        tools:text="@string/lbl_patient_list" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/patientRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="393dp" />
+
+                    <TextView
+                        android:id="@+id/txtLanguageFour3"
+                        style="@style/txtPoppinsbold12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="@dimen/_39pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_39pxh"
+                        android:layout_marginBottom="@dimen/_29pxv"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{patientsVM.patientsModel.txtLanguageFour}"
+                        tools:text="Add Patient" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageCirclebackgrou"
+            imageRes="@{@drawable/img_circlebackgrou}"
+            android:layout_width="182dp"
+            android:layout_height="184dp"
+            android:layout_gravity="top|start"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_circlebackgrou" />
+
+        <ImageView
+            android:id="@+id/imageCirclebackgrouOne"
+            imageRes="@{@drawable/img_circlebackgrou_159x169}"
+            android:layout_width="133dp"
+            android:layout_height="130dp"
+            android:layout_gravity="top|end"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_circlebackgrou_159x169" />
+    </FrameLayout>
+</layout>

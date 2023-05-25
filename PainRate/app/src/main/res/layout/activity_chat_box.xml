@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="chatBoxVM" type="com.painrate.modules.chatbox.data.viewmodel.ChatBoxVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnlinetwo"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_341pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnlogobluetext"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStacklogobluetext"
+                android:layout_height="@dimen/_279pxv" android:layout_width="match_parent">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarToolbar"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_width="match_parent" app:contentInsetStart="0dp">
+                    <LinearLayout android:id="@+id/linearTopBar"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStylewhite_1">
+                        <ImageView android:id="@+id/imageLogobluetext"
+                            android:layout_height="@dimen/_33pxh"
+                            android:layout_marginBottom="@dimen/_16pxv"
+                            android:layout_marginStart="@dimen/_25pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="@dimen/_134pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_logobluetext"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_logobluetext"/>
+                        <ImageView android:id="@+id/imageCut"
+                            android:layout_height="@dimen/_29pxh"
+                            android:layout_marginBottom="@dimen/_23pxv"
+                            android:layout_marginEnd="@dimen/_38pxh"
+                            android:layout_marginStart="@dimen/_173pxh"
+                            android:layout_marginTop="@dimen/_22pxv"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_cut"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_cut"/>
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+                <ImageView android:id="@+id/imageProfilePicture"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_44pxh"
+                    android:layout_marginBottom="@dimen/_26pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_26pxv"
+                    android:layout_width="@dimen/_44pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_22pxh}"
+                    imageRes="@{@drawable/img_profilepicture_44x44}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_profilepicture_44x44"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDrSteven"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_96pxv"
+                    android:layout_marginEnd="@dimen/_153pxh"
+                    android:layout_marginStart="@dimen/_153pxh"
+                    android:layout_marginTop="@dimen/_96pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{chatBoxVM.chatBoxModel.txtDrSteven}"
+                    style="@style/txtOutfitbold14" tools:text="@string/lbl_dr_steven"/>
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_99pxv"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_99pxv"
+                    android:layout_width="@dimen/_14pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                <LinearLayout android:id="@+id/linearColumnprice"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_21pxv"
+                    android:layout_marginEnd="@dimen/_46pxh"
+                    android:layout_marginStart="@dimen/_46pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtPrice"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{chatBoxVM.chatBoxModel.txtPrice}"
+                        style="@style/txtOutfitregular10" tools:text="@string/msg_hi_how_are_you"/>
+                </LinearLayout>
+                <View android:background="@color/gray_514"
+                    android:id="@+id/lineLineOne"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_129pxv"
+                    android:layout_marginTop="@dimen/_129pxv" android:layout_width="@dimen/_414pxh"/>
+                <ImageView android:id="@+id/imageCirclebackgrou"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_279pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_310pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_circlebackgrou_279x310}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_circlebackgrou_279x310"/>
+                <ImageView android:id="@+id/imageCirclebackgrouOne"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_170pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_204pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_circlebackgrou_170x204}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_circlebackgrou_170x204"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowhistevenhow"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnhistevenhow"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_weight="0.85"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+                    <TextView android:gravity="start"
+                        android:id="@+id/txtHiStevenhow"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_26pxh"
+                        android:layout_marginStart="@dimen/_26pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{chatBoxVM.chatBoxModel.txtHiStevenhow}"
+                        style="@style/txtOutfitregular10" tools:text="@string/msg_hi_steven_how"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageProfilePictureOne"
+                    android:layout_height="@dimen/_44pxh"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_width="@dimen/_44pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_profilepicture_64x64}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_profilepicture_64x64"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtTwo"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_60pxh"
+                android:layout_marginStart="@dimen/_60pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{chatBoxVM.chatBoxModel.txtTwo}"
+                style="@style/txtOutfitbold10" tools:text="@string/lbl_2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearChatBox"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_121pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <View android:background="@color/gray_514"
+                android:id="@+id/lineLineTwo"
+                android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_414pxh"/>
+            <LinearLayout android:id="@+id/linearRow"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowcontrast"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.67"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/frameStackcontrast"
+                        android:layout_height="@dimen/_21pxv"
+                        android:layout_marginBottom="@dimen/_2pxv" android:layout_width="@dimen/_21pxh">
+                        <ImageView android:id="@+id/imageContrast"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_21pxh"
+                            android:layout_width="@dimen/_21pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_contrast"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_contrast"/>
+                        <LinearLayout
+                            android:id="@+id/linearColumnvector"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="wrap_content" android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/linearRowvector"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_1pxh"
+                                android:layout_marginStart="@dimen/_1pxh"
+                                android:layout_width="wrap_content" android:orientation="horizontal">
+                                <ImageView android:id="@+id/imageVector"
+                                    android:layout_height="@dimen/_2pxh"
+                                    android:layout_width="@dimen/_1pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_vector_gray_403"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_gray_403"/>
+                                <ImageView
+                                    android:id="@+id/imageVectorOne"
+                                    android:layout_height="@dimen/_2pxh"
+                                    android:layout_marginStart="@dimen/_5pxh"
+                                    android:layout_width="@dimen/_1pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_vector_gray_403"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_gray_403"/>
+                            </LinearLayout>
+                            <ImageView android:id="@+id/imageVectorTwo"
+                                android:layout_height="@dimen/_2pxh"
+                                android:layout_marginTop="@dimen/_3pxv"
+                                android:layout_width="@dimen/_8pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector_gray_405"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_gray_405"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTypeamessage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_weight="0.85"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{chatBoxVM.chatBoxModel.txtTypeamessage}"
+                        style="@style/txtPoppinsregular13_1" tools:text="@string/msg_type_a_message"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowsearch"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_134pxh"
+                    android:layout_weight="0.33"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/frameStacksearch"
+                        android:layout_height="@dimen/_15pxv"
+                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_18pxh">
+                        <ImageView android:id="@+id/imageSearch"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_10pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_width="@dimen/_11pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_search_gray_515"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_search_gray_515"/>
+                        <ImageView android:id="@+id/imageRefresh"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="@dimen/_10pxh"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="@dimen/_11pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_refresh"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_refresh"/>
+                    </FrameLayout>
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearColumnvectorThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_weight="0.27"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <FrameLayout
+                            android:id="@+id/frameStackvectorThree"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_14pxv" android:layout_width="@dimen/_13pxh">
+                            <ImageView
+                                android:id="@+id/imageVectorThree"
+                                android:layout_gravity="top|center"
+                                android:layout_height="@dimen/_11pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_4pxh"
+                                android:layout_marginStart="@dimen/_4pxh"
+                                android:layout_width="@dimen/_5pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector_purple_200"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_purple_200"/>
+                            <ImageView android:id="@+id/imageVectorFour"
+                                android:layout_gravity="bottom|start"
+                                android:layout_height="@dimen/_7pxv"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+                        </FrameLayout>
+                        <ImageView android:id="@+id/imageVectorFive"
+                            android:layout_height="@dimen/_3pxh"
+                            android:layout_marginEnd="@dimen/_4pxh"
+                            android:layout_marginStart="@dimen/_7pxh"
+                            android:layout_width="@dimen/_2pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector_purple_200_3x2"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_purple_200_3x2"/>
+                        <ImageView android:id="@+id/imageVectorSix"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_2pxh"
+                            android:layout_marginEnd="@dimen/_3pxh"
+                            android:layout_marginStart="@dimen/_3pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="@dimen/_7pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector_purple_200_3x2"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_purple_200_3x2"/>
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/frameStackcheckmark"
+                        android:layout_height="@dimen/_16pxv"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_17pxh">
+                        <ImageView android:id="@+id/imageCheckmark"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_9pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_width="@dimen/_9pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_checkmark"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark"/>
+                        <ImageView android:id="@+id/imageSend"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_16pxh"
+                            android:layout_width="@dimen/_17pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_send"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_send"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/gray_514"
+                android:id="@+id/lineLineThree"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_414pxh"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

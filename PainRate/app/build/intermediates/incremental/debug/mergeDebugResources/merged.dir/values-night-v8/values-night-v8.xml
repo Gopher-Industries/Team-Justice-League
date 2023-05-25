@@ -31,7 +31,7 @@
     <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="Theme.MaterialComponents.DialogWhenLarge"/>
     <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="Theme.MaterialComponents.NoActionBar"/>
     <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="Theme.MaterialComponents.NoActionBar.Bridge"/>
-    <style name="Theme.ScanningPage" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

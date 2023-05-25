@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\drawable_home_icon_silhouette.png.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\drawable\\home_icon_silhouette.png"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\layout_activity_welcome2.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\layout\\activity_welcome2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\drawable_nlegend.png.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\drawable\\nlegend.png"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\drawable_ic_arrow.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\drawable\\ic_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\drawable_patientface.png.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\drawable\\patientface.png"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-pngs-21:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\xml_fileprovider.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\xml\\fileprovider.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\drawable_gopher_industries_logo.png.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\drawable\\gopher_industries_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\layout_activity_results.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\layout\\activity_results.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-merged_res-26:\\layout_activity_scanning.xml.flat",
+        "source": "C:\\Users\\Adam\\.gradle\\daemon\\7.3.3\\com.example.PainRate.app-main-28:\\layout\\activity_scanning.xml"
+    }
+]

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".modules.patients.ui.AddPatient">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="393dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="393dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextNotes"
+        android:layout_width="393dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextLoc"
+        android:layout_width="393dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNotes" />
+
+    <EditText
+        android:id="@+id/editTextDob"
+        android:layout_width="393dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Date of birth"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoc" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="286dp"
+        android:layout_height="86dp"
+        android:text="Add Patient"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDob" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="153dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_logobluetext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="405dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="100dp"
+        android:background="#BCBCBC"
+        android:backgroundTint="#D8D5D5"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="137dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Name"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/phoneText"
+            android:layout_width="136dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="0000000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+        <TextView
+            android:id="@+id/locText"
+            android:layout_width="161dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:text="Location"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/phoneText"
+            app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="161dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="Date"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="66dp"
+            android:layout_height="63dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_user_light_blue_600"
+            tools:srcCompat="@tools:sample/avatars"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/notesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <TextView
+            android:id="@+id/idText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="56dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

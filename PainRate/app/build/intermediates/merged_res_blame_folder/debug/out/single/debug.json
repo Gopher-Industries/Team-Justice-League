@@ -1,94 +1,646 @@
 [
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_location_gray_905.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_location_gray_905.xml"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou_132x197.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou_132x197.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/layout_activity_main.xml.flat",
-        "source": "com.example.PainRate.app-main-28:/layout/activity_main.xml"
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_sign_up_page.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_sign_up_page.xml"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.painrate.app-merged_res-43:/font_intermedium.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/intermedium.ttf"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.painrate.app-merged_res-43:/drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.painrate.app-pngs-38:/drawable-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/drawable_patientface.png.flat",
-        "source": "com.example.PainRate.app-main-28:/drawable/patientface.png"
+        "merged": "com.painrate.app-merged_res-43:/font_outfitbold.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/outfitbold.ttf"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/layout_activity_scanning.xml.flat",
-        "source": "com.example.PainRate.app-main-28:/layout/activity_scanning.xml"
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_bluegray_100_radius_24.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_bluegray_100_radius_24.xml"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/drawable_gopher_industries_logo.png.flat",
-        "source": "com.example.PainRate.app-main-28:/drawable/gopher_industries_logo.png"
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_radius_30.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_radius_30.xml"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_arrowleft_white_a700.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_arrowleft_white_a700.xml"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.painrate.app-merged_res-43:/font_outfitmedium.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/outfitmedium.ttf"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/drawable_ic_arrow.xml.flat",
-        "source": "com.example.PainRate.app-main-28:/drawable/ic_arrow.xml"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_welcomelog_119x414.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_welcomelog_119x414.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/layout_activity_results.xml.flat",
-        "source": "com.example.PainRate.app-main-28:/layout/activity_results.xml"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.PainRate.app-main-28:/drawable/ic_launcher_background.xml"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_ellipse4_82x81.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_ellipse4_82x81.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_ellipse5.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_ellipse5.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_white_a700_border_light_blue_600_radius_22.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_white_a700_border_light_blue_600_radius_22.xml"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/drawable_home_icon_silhouette.png.flat",
-        "source": "com.example.PainRate.app-main-28:/drawable/home_icon_silhouette.png"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_7.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_7.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou_light_blue_300.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou_light_blue_300.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.PainRate.app-pngs-21:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "com.painrate.app-merged_res-43:/font_inter.xml.flat",
+        "source": "com.painrate.app-main-45:/font/inter.xml"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/drawable_nlegend.png.flat",
-        "source": "com.example.PainRate.app-main-28:/drawable/nlegend.png"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_44x44.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_44x44.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/xml_fileprovider.xml.flat",
-        "source": "com.example.PainRate.app-main-28:/xml/fileprovider.xml"
+        "merged": "com.painrate.app-merged_res-43:/drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.painrate.app-pngs-38:/drawable-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_notification.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_notification.xml"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.painrate.app-merged_res-43:/drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.painrate.app-pngs-38:/drawable-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.PainRate.app-merged_res-26:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.PainRate.app-main-28:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_arrowdown.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_arrowdown.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_abel.xml.flat",
+        "source": "com.painrate.app-main-45:/font/abel.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_46x46.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_46x46.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_vector_gray_403.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_vector_gray_403.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_white_a700_radius_30.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_white_a700_radius_30.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_nlegend.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/nlegend.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_6.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_6.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_close.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_close.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_gopher_industries_logo.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/gopher_industries_logo.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_ellipse6.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_ellipse6.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_gradient_s_light_blue_600_e_blue_200_radius_26.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_gradient_s_light_blue_600_e_blue_200_radius_26.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_squarelogoblu.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_squarelogoblu.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_layout_progress_dialog.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/layout_progress_dialog.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou_263x335.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou_263x335.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_64x64.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_64x64.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_poppinsbold.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/poppinsbold.ttf"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_capture.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_capture.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_interregular.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/interregular.ttf"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_ellipse3.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_ellipse3.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_clock.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_clock.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_cut.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_cut.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_5.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_5.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_bluegray_200_radius_5.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_bluegray_200_radius_5.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_user_light_blue_600.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_user_light_blue_600.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_comfortaa.xml.flat",
+        "source": "com.painrate.app-main-45:/font/comfortaa.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_reset_password.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_reset_password.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_clock_light_blue_600.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_clock_light_blue_600.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_white_a700.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_white_a700.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.painrate.app-main-45:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_roboto.xml.flat",
+        "source": "com.painrate.app-main-45:/font/roboto.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_patients.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_patients.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_2.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_2.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_ellipse4_61x62.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_ellipse4_61x62.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_white_a700_border_gray_400.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_white_a700_border_gray_400.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_send.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_send.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_welcomelog.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_welcomelog.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "com.painrate.app-pngs-38:/drawable-ldpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou_338x285.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou_338x285.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_row_keyboard.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/row_keyboard.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_abelregular.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/abelregular.ttf"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_attentiontrian.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_attentiontrian.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou_159x169.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou_159x169.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_image_not_found.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/image_not_found.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_white_a700_radius_5.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_white_a700_radius_5.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_grid.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_grid.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_bluegray_100_radius_27.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_bluegray_100_radius_27.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_vector_purple_200.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_vector_purple_200.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_robotoromanbold.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/robotoromanbold.ttf"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_baseline_home_24.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/baseline_home_24.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_menu.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_menu.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_arrowright.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_arrowright.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_poppinsmedium.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/poppinsmedium.ttf"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_gradient_s_red_a701_e_blue_200_radius_30_51.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_gradient_s_red_a701_e_blue_200_radius_30_51.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_results.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_results.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_search_gray_515.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_search_gray_515.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_ic_arrow.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/ic_arrow.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_arrowup.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_arrowup.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_white_a700_radius_10.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_white_a700_radius_10.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_ellipse1.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_ellipse1.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_gradient_s_light_blue_600_e_blue_200_radius_30.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_gradient_s_light_blue_600_e_blue_200_radius_30.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_white_a700_radius_17_5.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_white_a700_radius_17_5.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_1000f22043785.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_1000f22043785.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_search.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_search.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_location.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_location.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_microphone.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_microphone.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_login_page.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_login_page.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_radius_30_51.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_radius_30_51.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_vector_purple_200_3x2.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_vector_purple_200_3x2.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_ellipse2.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_ellipse2.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_calendar.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_calendar.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_scanning.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_scanning.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_camera.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_camera.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_menu_setting.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_menu_setting.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_main_page.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_main_page.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_chat_box.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_chat_box.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_arrowleft.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_arrowleft.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.painrate.app-main-45:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_home_icon_silhouette.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/home_icon_silhouette.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.painrate.app-pngs-38:/drawable-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_menu.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_menu_bluegray_900.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_menu_bluegray_900.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_vector.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_vector.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_3.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_3.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_checkmark.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_checkmark.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_bluegray_100_e5.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_bluegray_100_e5.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.painrate.app-pngs-38:/drawable-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_sun.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_sun.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_gray_50_radius_14.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_gray_50_radius_14.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_refresh.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_refresh.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_1.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_1.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_welcome_page.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_welcome_page.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou_191x198.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou_191x198.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_black_901.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_black_901.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_search_light_blue_600.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_search_light_blue_600.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_ellipse5_61x62.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_ellipse5_61x62.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.painrate.app-pngs-38:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_ellipse4.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_ellipse4.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_poppins.xml.flat",
+        "source": "com.painrate.app-main-45:/font/poppins.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_arrowleft_gray_501.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_arrowleft_gray_501.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou_170x204.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou_170x204.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_videocamera.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_videocamera.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_row_main_page.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/row_main_page.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_comfortaaregular.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/comfortaaregular.ttf"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_poppinslight.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/poppinslight.ttf"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_notification_light_blue_600.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_notification_light_blue_600.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_emergency.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_emergency.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_patient_view.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_patient_view.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_profilepicture_4.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_profilepicture_4.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_vector_gray_405.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_vector_gray_405.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou_164x206.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou_164x206.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/raw_lottie_loading.json.flat",
+        "source": "com.painrate.app-main-45:/raw/lottie_loading.json"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_user.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_user.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_circlebackgrou_279x310.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_circlebackgrou_279x310.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_add_patient.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_add_patient.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_outfit.xml.flat",
+        "source": "com.painrate.app-main-45:/font/outfit.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_patientface.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/patientface.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_activity_keyboard.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/activity_keyboard.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_contrast.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_contrast.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_gradient_s_indigo_a100_e_blue_200_radius_30.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_gradient_s_indigo_a100_e_blue_200_radius_30.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.painrate.app-main-45:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_notification.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_notification.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_menu_light_blue_600.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_menu_light_blue_600.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_rectangle_bg_light_blue_600_radius_9_5.xml.flat",
+        "source": "com.painrate.app-main-45:/drawable/rectangle_bg_light_blue_600_radius_9_5.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_outfitregular.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/outfitregular.ttf"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/drawable_img_logobluetext.png.flat",
+        "source": "com.painrate.app-main-45:/drawable/img_logobluetext.png"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/font_poppinsregular.ttf.flat",
+        "source": "com.painrate.app-main-45:/font/poppinsregular.ttf"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/layout_patientrow.xml.flat",
+        "source": "com.painrate.app-main-45:/layout/patientrow.xml"
+    },
+    {
+        "merged": "com.painrate.app-merged_res-43:/xml_provider_paths.xml.flat",
+        "source": "com.painrate.app-main-45:/xml/provider_paths.xml"
     }
 ]

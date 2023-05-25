@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="mainPageRowModel" type="com.painrate.modules.mainpage.data.model.MainPageRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRow29april2023"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txt29april2023"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_weight="0.41" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{mainPageRowModel.txt29april2023}"
+            style="@style/txtPoppinsregular10" tools:text="@string/lbl_29_april_2023"/>
+        <LinearLayout android:id="@+id/linearRowcalendar"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_89pxh"
+            android:layout_weight="0.59" android:layout_width="0dp" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageCalendar"
+                android:layout_height="@dimen/_19pxh"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_width="@dimen/_18pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_calendar"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txt30april2023"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_weight="0.78" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{mainPageRowModel.txt30april2023}"
+                style="@style/txtPoppinsregular10" tools:text="@string/lbl_30_april_2023"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

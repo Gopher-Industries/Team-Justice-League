@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/arrow_upward/baseline_arrow_upward_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/home/baseline_home_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,8 +33,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_arrow" />
-                            <entry key="sourceFile" value="S:\Grade 4\Grade 4 T2 SIT378\Project\PainRate" />
+                            <entry key="outputName" value="baseline_home_24" />
+                            <entry key="sourceFile" value="C:\Users\Adam\Downloads\those10_s_application" />
                           </map>
                         </option>
                       </PersistentState>
