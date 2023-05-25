@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationVM" type="com.painrate.modules.notification.data.viewmodel.NotificationVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameNotification"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+
+        <FrameLayout
+            android:id="@+id/frameBottombar"
+            style="@style/groupStylewhite_2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom|start">
+
+            <LinearLayout
+                android:id="@+id/linearRowgrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearDashboard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageGrid"
+                        android:layout_width="@dimen/_20pxh"
+                        android:layout_height="@dimen/_21pxh"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_grid"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_grid" />
+
+                    <TextView
+                        android:id="@+id/txtDashboard"
+                        style="@style/txtPoppinsmedium10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtDashboard}"
+                        tools:text="@string/lbl_dashboard" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearCapture"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageCamera"
+                        android:layout_width="@dimen/_23pxh"
+                        android:layout_height="@dimen/_21pxh"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_camera"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_camera" />
+
+                    <TextView
+                        android:id="@+id/txtCapture"
+                        style="@style/txtPoppinsmedium10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtCapture}"
+                        tools:text="@string/lbl_capture" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPatients"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageUser"
+                        android:layout_width="@dimen/_27pxh"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_user"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_user" />
+
+                    <TextView
+                        android:id="@+id/txtPatients"
+                        style="@style/txtPoppinsmedium10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtPatients}"
+                        tools:text="@string/lbl_patients" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageNotification"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_notification_light_blue_600"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_notification_light_blue_600" />
+
+                    <TextView
+                        android:id="@+id/txtNotificationOne"
+                        style="@style/txtPoppinsmedium10_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtNotificationOne}"
+                        tools:text="@string/lbl_notification" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageMenu"
+                        android:layout_width="@dimen/_20pxh"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_menu_bluegray_900"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_menu_bluegray_900" />
+
+                    <TextView
+                        android:id="@+id/txtMenuOne"
+                        style="@style/txtPoppinsmedium10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtMenuOne}"
+                        tools:text="@string/lbl_menu" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/linearColumnlogobluetext"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStacklogobluetext"
+                android:layout_height="@dimen/_263pxv" android:layout_width="match_parent">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarToolbar"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_width="match_parent" app:contentInsetStart="0dp">
+                    <LinearLayout android:id="@+id/linearTopBar"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal" style="@style/groupStylewhite_1">
+                        <ImageView android:id="@+id/imageLogobluetext"
+                            android:layout_height="@dimen/_33pxh"
+                            android:layout_marginBottom="@dimen/_16pxv"
+                            android:layout_marginStart="@dimen/_25pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="@dimen/_134pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_logobluetext"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_logobluetext"/>
+                        <ImageView android:id="@+id/imageCut"
+                            android:layout_height="@dimen/_29pxh"
+                            android:layout_marginBottom="@dimen/_23pxv"
+                            android:layout_marginEnd="@dimen/_38pxh"
+                            android:layout_marginStart="@dimen/_173pxh"
+                            android:layout_marginTop="@dimen/_22pxv"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_cut"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_cut"/>
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNotificationTwo"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_91pxv"
+                    android:layout_marginEnd="@dimen/_148pxh"
+                    android:layout_marginStart="@dimen/_148pxh"
+                    android:layout_marginTop="@dimen/_91pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{notificationVM.notificationModel.txtNotificationTwo}"
+                    style="@style/txtOutfitregular20" tools:text="@string/lbl_notification"/>
+                <LinearLayout android:id="@+id/linearColumndistance"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_33pxh"
+                    android:layout_marginStart="@dimen/_33pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDistance"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtDistance}"
+                        style="@style/txtOutfitmedium12" tools:text="@string/lbl_1m_ago"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDistanceOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_57pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtDistanceOne}"
+                        style="@style/txtOutfitmedium12" tools:text="@string/lbl_3_m_ago"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearColumndrkate"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_78pxh"
+                    android:layout_marginStart="@dimen/_78pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDrKate"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtDrKate}"
+                        style="@style/txtOutfitbold14" tools:text="@string/lbl_dr_kate"/>
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtPrice"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{notificationVM.notificationModel.txtPrice}"
+                        style="@style/txtOutfitregular10" tools:text="@string/msg_hi_how_are_you"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDrSteven"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtDrSteven}"
+                        style="@style/txtOutfitbold14" tools:text="@string/lbl_dr_steven"/>
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtPriceOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{notificationVM.notificationModel.txtPriceOne}"
+                        style="@style/txtOutfitregular10" tools:text="@string/msg_hi_how_are_you"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageProfilePicture"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_44pxh"
+                    android:layout_marginBottom="@dimen/_77pxv"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_77pxv"
+                    android:layout_width="@dimen/_44pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_profilepicture_44x44}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_profilepicture_44x44"/>
+                <ImageView android:id="@+id/imageProfilePictureOne"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_44pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_44pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_profilepicture_6}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_profilepicture_6"/>
+                <LinearLayout android:id="@+id/linearColumntwo"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_29pxv"
+                    android:layout_marginEnd="@dimen/_54pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_marginTop="@dimen/_29pxv"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical" style="@style/groupStylelight_blue_600cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="end" android:id="@+id/txtTwo"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginEnd="@dimen/_6pxh"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtTwo}"
+                        style="@style/txtOutfitbold10" tools:text="@string/lbl_2"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearColumntwoOne"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_104pxv"
+                    android:layout_marginEnd="@dimen/_54pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_marginTop="@dimen/_104pxv"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical" style="@style/groupStylelight_blue_600cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="end"
+                        android:id="@+id/txtTwoOne"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginEnd="@dimen/_6pxh"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtTwoOne}"
+                        style="@style/txtOutfitbold10" tools:text="@string/lbl_2"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTwoTwo"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_74pxv"
+                    android:layout_marginEnd="@dimen/_54pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_marginTop="@dimen/_74pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{notificationVM.notificationModel.txtTwoTwo}"
+                    style="@style/txtOutfitbold10" tools:text="@string/lbl_2"/>
+                <ImageView android:id="@+id/imageCirclebackgrou"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_132pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_197pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_circlebackgrou_132x197}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_circlebackgrou_132x197"/>
+                <ImageView android:id="@+id/imageCirclebackgrouOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_263pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_335pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_circlebackgrou_263x335}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_circlebackgrou_263x335"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowprofilepictureTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnprofilepictureTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_weight="0.13"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <ImageView android:id="@+id/imageProfilePictureTwo"
+                        android:layout_height="@dimen/_44pxh"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_profilepicture_7}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_profilepicture_7"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackprofilepictureThree"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_46pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_27pxv" android:layout_width="@dimen/_44pxh">
+                        <ImageView
+                            android:id="@+id/imageProfilePictureThree"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_44pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_profilepicture_44x44}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_profilepicture_44x44"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTwoThree"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_4pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{notificationVM.notificationModel.txtTwoThree}"
+                            style="@style/txtOutfitbold10" tools:text="@string/lbl_2"/>
+                    </FrameLayout>
+                    <ImageView android:gravity="end"
+                        android:id="@+id/imageProfilePictureFour"
+                        android:layout_height="@dimen/_44pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_27pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_profilepicture_6}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_profilepicture_6"/>
+                    <ImageView android:gravity="end"
+                        android:id="@+id/imageProfilePictureFive"
+                        android:layout_height="@dimen/_44pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_29pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_profilepicture_7}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_profilepicture_7"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumndrmartha"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_weight="0.87"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDrMartha"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtDrMartha}"
+                        style="@style/txtOutfitbold14" tools:text="@string/lbl_dr_martha"/>
+                    <LinearLayout android:id="@+id/linearRowpriceTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:id="@+id/txtPriceTwo"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_weight="0.82"
+                            android:layout_width="0dp"
+                            android:text="@{notificationVM.notificationModel.txtPriceTwo}"
+                            style="@style/txtOutfitregular10" tools:text="@string/msg_hi_how_are_you2"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtDistanceTwo"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_13pxv"
+                            android:layout_marginStart="@dimen/_18pxh"
+                            android:layout_weight="0.18"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{notificationVM.notificationModel.txtDistanceTwo}"
+                            style="@style/txtOutfitmedium12" tools:text="@string/lbl_30m_ago"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDrKateOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_22pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtDrKateOne}"
+                        style="@style/txtOutfitbold14" tools:text="@string/lbl_dr_kate"/>
+                    <LinearLayout android:id="@+id/linearRowpriceThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:id="@+id/txtPriceThree"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_weight="0.83"
+                            android:layout_width="0dp"
+                            android:text="@{notificationVM.notificationModel.txtPriceThree}"
+                            style="@style/txtOutfitregular10" tools:text="@string/msg_hi_how_are_you"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txt1hrsago"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_13pxv"
+                            android:layout_marginStart="@dimen/_17pxh"
+                            android:layout_weight="0.17"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{notificationVM.notificationModel.txt1hrsago}"
+                            style="@style/txtOutfitmedium12" tools:text="@string/lbl_1_hrs_ago"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDrStevenOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{notificationVM.notificationModel.txtDrStevenOne}"
+                        style="@style/txtOutfitbold14" tools:text="@string/lbl_dr_steven"/>
+                    <LinearLayout android:id="@+id/linearRowpriceFour"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:id="@+id/txtPriceFour"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_weight="0.82"
+                            android:layout_width="0dp"
+                            android:text="@{notificationVM.notificationModel.txtPriceFour}"
+                            style="@style/txtOutfitregular10" tools:text="@string/msg_hi_how_are_you"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txt2hrsago"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_weight="0.18"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{notificationVM.notificationModel.txt2hrsago}"
+                            style="@style/txtOutfitmedium12" tools:text="@string/lbl_2_hrs_ago"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearRowdrmarthaOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearColumndrmarthaOne"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.82"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtDrMarthaOne"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginStart="@dimen/_2pxh"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{notificationVM.notificationModel.txtDrMarthaOne}"
+                                style="@style/txtOutfitbold14" tools:text="@string/lbl_dr_martha"/>
+                            <TextView
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtPriceFive"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_width="match_parent"
+                                android:text="@{notificationVM.notificationModel.txtPriceFive}"
+                                style="@style/txtOutfitregular10" tools:text="@string/msg_hi_how_are_you"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txt3hrsago"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_13pxv"
+                            android:layout_marginStart="@dimen/_18pxh"
+                            android:layout_marginTop="@dimen/_17pxv"
+                            android:layout_weight="0.18"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{notificationVM.notificationModel.txt3hrsago}"
+                            style="@style/txtOutfitmedium12" tools:text="@string/lbl_3_hrs_ago"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

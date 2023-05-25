@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.PainRate.app-mergeDebugResources-24:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "outputFile": "com.painrate.app-mergeDebugResources-41:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\14507\\.gradle\\caches\\transforms-3\\ae4c2cc8c003b44a4fb6d6263f883f0f\\transformed\\material-1.6.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\Adam\\.gradle\\caches\\transforms-3\\53edefe15d403f8467620aa121e38059\\transformed\\material-1.7.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

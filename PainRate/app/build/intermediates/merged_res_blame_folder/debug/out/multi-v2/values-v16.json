@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.PainRate.app-mergeDebugResources-24:/values-v16/values-v16.xml",
+            "outputFile": "com.painrate.app-mergeDebugResources-41:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\14507\\.gradle\\caches\\transforms-3\\2f161c074bbce579caa7fb5cf4888107\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Adam\\.gradle\\caches\\transforms-3\\f3889f18d4f26e70cef4e17d11226053\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Adam\\.gradle\\caches\\transforms-3\\35247393b79a5fe3c4f500e2adf3d76f\\transformed\\appcompat-1.5.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\14507\\.gradle\\caches\\transforms-3\\0d9ff9c5c657323091c4860d49fad23b\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

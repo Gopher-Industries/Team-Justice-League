@@ -1,124 +1,218 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.PainRate"
+3    package="com.PainRate"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="32" />
-9-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
+8-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:5:5-80
-11-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:5:22-77
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:6:5-79
-12-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:6:22-76
-13    <uses-permission android:name="android.permission.INTERNET" />
-13-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:7:5-67
-13-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:7:22-64
-14
-15    <queries>
-15-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:9:5-13:15
-16        <intent>
-16-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:10:9-12:18
-17            <action android:name="android.media.action.IMAGE_CAPTURE" />
-17-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:11:13-73
-17-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:11:21-70
-18        </intent>
-19    </queries>
-20
-21    <application
-21-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:15:5-48:19
-22        android:allowBackup="true"
-22-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:16:9-35
-23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.7.0] C:\Users\14507\.gradle\caches\transforms-3\0d9ff9c5c657323091c4860d49fad23b\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-24        android:debuggable="true"
-25        android:extractNativeLibs="false"
-26        android:icon="@mipmap/ic_launcher"
-26-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:17:9-43
-27        android:label="@string/app_name"
-27-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:18:9-41
-28        android:roundIcon="@mipmap/ic_launcher_round"
-28-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:19:9-54
-29        android:supportsRtl="true"
-29-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:20:9-35
-30        android:testOnly="true"
-31        android:theme="@style/Theme.ScanningPage" >
-31-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:21:9-50
-32        <activity
-32-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:22:9-24:40
-33            android:name="com.example.PainRate.Results"
-33-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:23:13-56
-34            android:exported="false" />
-34-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:24:13-37
-35
-36        <provider
-36-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:26:9-34:20
-37            android:name="androidx.core.content.FileProvider"
-37-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:27:13-62
-38            android:authorities="com.example.PainRate.fileprovider"
-38-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:28:13-68
-39            android:exported="false"
-39-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:29:13-37
-40            android:grantUriPermissions="true" >
-40-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:30:13-47
-41            <meta-data
-41-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:31:13-33:56
-42                android:name="android.support.FILE_PROVIDER_PATHS"
-42-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:32:17-67
-43                android:resource="@xml/fileprovider" />
-43-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:33:17-53
-44        </provider>
-45
-46        <activity
-46-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:36:9-38:40
-47            android:name="com.example.PainRate.Scanning"
-47-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:37:13-57
-48            android:exported="false" />
-48-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:38:13-37
-49        <activity
-49-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:39:9-47:20
-50            android:name="com.example.PainRate.MainActivity"
-50-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:40:13-61
-51            android:exported="true" >
-51-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:41:13-36
-52            <intent-filter>
-52-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:42:13-46:29
-53                <action android:name="android.intent.action.MAIN" />
-53-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:43:17-69
-53-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:43:25-66
-54
-55                <category android:name="android.intent.category.LAUNCHER" />
-55-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:45:17-77
-55-->S:\Grade 4\Grade 4 T2 SIT378\Project\TLJ\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:45:27-74
-56            </intent-filter>
-57        </activity>
-58
-59        <provider
-59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\14507\.gradle\caches\transforms-3\da68f5ad25f3238c6bd6baa07c38da88\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-60            android:name="androidx.startup.InitializationProvider"
-60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\14507\.gradle\caches\transforms-3\da68f5ad25f3238c6bd6baa07c38da88\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-61            android:authorities="com.example.PainRate.androidx-startup"
-61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\14507\.gradle\caches\transforms-3\da68f5ad25f3238c6bd6baa07c38da88\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-62            android:exported="false" >
-62-->[androidx.emoji2:emoji2:1.0.0] C:\Users\14507\.gradle\caches\transforms-3\da68f5ad25f3238c6bd6baa07c38da88\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-63            <meta-data
-63-->[androidx.emoji2:emoji2:1.0.0] C:\Users\14507\.gradle\caches\transforms-3\da68f5ad25f3238c6bd6baa07c38da88\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-64-->[androidx.emoji2:emoji2:1.0.0] C:\Users\14507\.gradle\caches\transforms-3\da68f5ad25f3238c6bd6baa07c38da88\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-65                android:value="androidx.startup" />
-65-->[androidx.emoji2:emoji2:1.0.0] C:\Users\14507\.gradle\caches\transforms-3\da68f5ad25f3238c6bd6baa07c38da88\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-66            <meta-data
-66-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\14507\.gradle\caches\transforms-3\de0306618523321e6854ef1445ce3349\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-67-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\14507\.gradle\caches\transforms-3\de0306618523321e6854ef1445ce3349\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-68                android:value="androidx.startup" />
-68-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\14507\.gradle\caches\transforms-3\de0306618523321e6854ef1445ce3349\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-69        </provider>
-70    </application>
-71
-72</manifest>
+12-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:8:5-80
+13-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:8:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:9:5-81
+14-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:9:22-78
+15    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+16
+17    <uses-feature
+17-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:12:5-84
+18        android:name="android.hardware.camera"
+18-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:12:19-57
+19        android:required="true" />
+19-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:12:58-81
+20    <uses-feature android:name="android.hardware.camera.autofocus" />
+20-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:13:5-70
+20-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:13:19-67
+21
+22    <permission
+22-->[androidx.core:core:1.9.0] C:\Users\Adam\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+23        android:name="com.PainRate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.9.0] C:\Users\Adam\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.9.0] C:\Users\Adam\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="com.PainRate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.9.0] C:\Users\Adam\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.9.0] C:\Users\Adam\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+27
+28    <application
+28-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:15:5-88:19
+29        android:name="com.painrate.appcomponents.di.MyApp"
+29-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:16:9-59
+30        android:allowBackup="false"
+30-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:17:9-36
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.9.0] C:\Users\Adam\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+32        android:debuggable="true"
+33        android:extractNativeLibs="false"
+34        android:icon="@mipmap/ic_launcher"
+34-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:18:9-43
+35        android:label="@string/app_name"
+35-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:19:9-41
+36        android:largeHeap="true"
+36-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:20:9-33
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:21:9-54
+38        android:supportsRtl="true"
+38-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:22:9-35
+39        android:testOnly="true"
+40        android:theme="@style/Theme.MyApp"
+40-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:23:9-43
+41        android:usesCleartextTraffic="true" >
+41-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:24:9-44
+42        <activity
+42-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:25:9-27:40
+43            android:name="com.painrate.modules.patients.ui.AddPatient"
+43-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:26:13-71
+44            android:exported="false" />
+44-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:27:13-37
+45        <activity
+45-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:28:9-30:40
+46            android:name="com.painrate.modules.patients.ui.PatientView"
+46-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:29:13-72
+47            android:exported="false" />
+47-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:30:13-37
+48        <activity
+48-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:31:9-33:52
+49            android:name="com.painrate.modules.resetpassword.ui.ResetPasswordActivity"
+49-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:32:13-87
+50            android:screenOrientation="portrait" />
+50-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:33:13-49
+51        <activity
+51-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:34:9-36:52
+52            android:name="com.painrate.modules.notification.ui.NotificationActivity"
+52-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:35:13-85
+53            android:screenOrientation="portrait" />
+53-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:36:13-49
+54        <activity
+54-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:37:9-39:52
+55            android:name="com.painrate.modules.menusetting.ui.MenuSettingActivity"
+55-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:38:13-83
+56            android:screenOrientation="portrait" />
+56-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:39:13-49
+57        <activity
+57-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:40:9-43:52
+58            android:name="com.painrate.modules.loginpage.ui.LoginPageActivity"
+58-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:41:13-79
+59            android:exported="true"
+59-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:42:13-36
+60            android:screenOrientation="portrait" />
+60-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:43:13-49
+61        <activity
+61-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:44:9-46:52
+62            android:name="com.painrate.modules.mainpage.ui.MainPageActivity"
+62-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:45:13-77
+63            android:screenOrientation="portrait" />
+63-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:46:13-49
+64        <activity
+64-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:47:9-49:52
+65            android:name="com.painrate.modules.menu.ui.MenuActivity"
+65-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:48:13-69
+66            android:screenOrientation="portrait" />
+66-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:49:13-49
+67        <activity
+67-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:50:9-52:52
+68            android:name="com.painrate.modules.keyboard.ui.KeyboardActivity"
+68-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:51:13-77
+69            android:screenOrientation="portrait" />
+69-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:52:13-49
+70        <activity
+70-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:53:9-55:52
+71            android:name="com.painrate.modules.patients.ui.PatientsActivity"
+71-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:54:13-77
+72            android:screenOrientation="portrait" />
+72-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:55:13-49
+73        <activity
+73-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:56:9-65:20
+74            android:name="com.painrate.modules.welcomepage.ui.WelcomePageActivity"
+74-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:57:13-83
+75            android:exported="true"
+75-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:58:13-36
+76            android:screenOrientation="portrait" >
+76-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:59:13-49
+77            <intent-filter>
+77-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:60:13-64:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:61:17-69
+78-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:61:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:63:17-77
+80-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:63:27-74
+81            </intent-filter>
+82        </activity>
+83        <activity
+83-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:66:9-68:52
+84            android:name="com.painrate.modules.capture.ui.CaptureActivity"
+84-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:67:13-75
+85            android:screenOrientation="portrait" />
+85-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:68:13-49
+86        <activity
+86-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:69:9-71:52
+87            android:name="com.painrate.modules.chatbox.ui.ChatBoxActivity"
+87-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:70:13-75
+88            android:screenOrientation="portrait" />
+88-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:71:13-49
+89        <activity
+89-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:72:9-74:52
+90            android:name="com.painrate.modules.signuppage.ui.SignUpPageActivity"
+90-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:73:13-81
+91            android:screenOrientation="portrait" />
+91-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:74:13-49
+92        <activity
+92-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:75:9-77:52
+93            android:name="com.painrate.modules.emergency.ui.EmergencyActivity"
+93-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:76:13-79
+94            android:screenOrientation="portrait" />
+94-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:77:13-49
+95
+96        <provider
+97            android:name="androidx.core.content.FileProvider"
+97-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:80:13-62
+98            android:authorities="com.PainRate.provider"
+98-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:81:13-60
+99            android:exported="false"
+99-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:82:13-37
+100            android:grantUriPermissions="true" >
+100-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:83:13-47
+101            <meta-data
+101-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:84:13-86:58
+102                android:name="android.support.FILE_PROVIDER_PATHS"
+102-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:85:17-67
+103                android:resource="@xml/provider_paths" />
+103-->C:\Users\Adam\Team-Justice-League\PainRate\app\src\main\AndroidManifest.xml:86:17-55
+104        </provider>
+105        <provider
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Adam\.gradle\caches\transforms-3\a44fe69b7f5ac0e141d6bda2f04e92a5\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+106            android:name="androidx.startup.InitializationProvider"
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Adam\.gradle\caches\transforms-3\a44fe69b7f5ac0e141d6bda2f04e92a5\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+107            android:authorities="com.PainRate.androidx-startup"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Adam\.gradle\caches\transforms-3\a44fe69b7f5ac0e141d6bda2f04e92a5\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+108            android:exported="false" >
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Adam\.gradle\caches\transforms-3\a44fe69b7f5ac0e141d6bda2f04e92a5\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+109            <meta-data
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Adam\.gradle\caches\transforms-3\a44fe69b7f5ac0e141d6bda2f04e92a5\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Adam\.gradle\caches\transforms-3\a44fe69b7f5ac0e141d6bda2f04e92a5\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+111                android:value="androidx.startup" />
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Adam\.gradle\caches\transforms-3\a44fe69b7f5ac0e141d6bda2f04e92a5\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Adam\.gradle\caches\transforms-3\baa824db3c1bec348e984fa25af19fb7\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Adam\.gradle\caches\transforms-3\baa824db3c1bec348e984fa25af19fb7\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+114                android:value="androidx.startup" />
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Adam\.gradle\caches\transforms-3\baa824db3c1bec348e984fa25af19fb7\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+115        </provider>
+116    </application>
+117
+118</manifest>

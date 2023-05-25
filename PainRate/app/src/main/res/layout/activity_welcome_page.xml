@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="welcomePageVM" type="com.painrate.modules.welcomepage.data.viewmodel.WelcomePageVM"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearWelcomepage"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageSquarelogoblu"
+            imageRes="@{@drawable/img_squarelogoblu}"
+            android:layout_width="@dimen/_271pxh"
+            android:layout_height="@dimen/_276pxh"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_49pxh"
+            android:layout_marginTop="@dimen/_93pxv"
+            android:layout_marginEnd="@dimen/_49pxh"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_squarelogoblu" />
+
+        <TextView
+            android:id="@+id/txtLanguage"
+            style="@style/txtComfortaaregular27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_100pxv"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="@{welcomePageVM.welcomePageModel.txtLanguage}"
+            tools:text="@string/msg_increase_your_d" />
+
+        <TextView
+            android:id="@+id/txtLanguageOne"
+            style="@style/txtComfortaaregular27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{welcomePageVM.welcomePageModel.txtLanguageOne}"
+            tools:text="@string/lbl_accuracy_by" />
+
+        <TextView
+            android:id="@+id/txtPainRate"
+            style="@style/txtPoppinsregular40"
+            android:layout_width="200dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_101pxh"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/_101pxh"
+            android:layout_marginRight="100dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{welcomePageVM.welcomePageModel.txtPainRate}"
+            tools:text="@string/lbl_pain_rate" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStart"
+            style="@style/btnGradientRounded"
+            android:layout_width="317dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:letterSpacing="0.13"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_18pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_start"
+            android:textAllCaps="false"
+            tools:text="@string/lbl_start" />
+
+        <LinearLayout
+            android:id="@+id/linearRegister"
+            style="@style/groupStylecornerRadius"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_66pxv"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
