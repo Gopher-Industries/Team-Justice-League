@@ -6,6 +6,8 @@ def get_image():
     path = 'RnD/Face Quality/Results/Temp_webcam_images/'
     # class webcam():
 
+    ##      CHANGE VALUE TO DETECT YOUR WEBCAM WHILE TESTING 
+    #       (might be 0 if built in webcam)
     cam = cv2.VideoCapture(1)
     cv2.namedWindow("Pain detection application")
     img_counter = 0

@@ -86,3 +86,10 @@ Added Where each test fails to the PASS/FAIL column. This will indicate to us an
 ##### NOTE V2.0
 Added webcam integration to allow for ease of testing while application is not working. 
 This will allow us to test with images taken from webcam and send to check for pain assessment.
+
+
+##### OPEN ISSUES 25/5/23
+- Webcam only takes an image every second go. Needs to be adjusted to work first time. 
+- Nose X/Y locations sometimes are not accurate. Needs to be fine tuned within the WEBCAM.PY file.
+- Face recognition confidence needs to be adjusted to lift the score as sometimes its too low. 
+  

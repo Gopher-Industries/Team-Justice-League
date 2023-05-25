@@ -14,6 +14,15 @@ import json
 import pprint as pp
 import _uuid
 
+# Image qulity block aims to filter out all images which might not 
+# yield great results in detecting pain. 
+# This will inspect:
+#       BRIGHTNESS LEVELS
+#       FOCUS LEVELS
+#       FACE COUNT
+#       CONFIDENCE IN FACES DETECTED
+#       NOSE LOCATIONS
+#       PASS / FAIL
 
 class ImageQuality():
     

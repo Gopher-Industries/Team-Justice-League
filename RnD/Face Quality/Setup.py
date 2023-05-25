@@ -3,6 +3,8 @@ import pandas as pd
 import os
 
 
+# SETUP.PY is created to help gather the images from a static location
+# which is currently on a local machine with the file paths within a CSV file.
 
 def get_path():
     return r'/Users/nadav/Desktop/Uni/2022_tri_3/TeamA/ML/Project/RnD/Face Quality/faces.csv'
